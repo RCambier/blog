@@ -8,15 +8,15 @@
 <meta name="generator" content="Jekyll v4.1.1" />
 <meta property="og:title" content="PCA" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="R Cambier’s blog. About riddles and computer science." />
-<meta property="og:description" content="R Cambier’s blog. About riddles and computer science." />
-<link rel="canonical" href="https://rcambier.github.io/blog/2021/09/15/pca.html" />
-<meta property="og:url" content="https://rcambier.github.io/blog/2021/09/15/pca.html" />
+<meta name="description" content="PCA dimensionality reduction from scratch" />
+<meta property="og:description" content="PCA dimensionality reduction from scratch" />
+<link rel="canonical" href="https://rcambier.github.io/blog/ai/2021/09/15/pca.html" />
+<meta property="og:url" content="https://rcambier.github.io/blog/ai/2021/09/15/pca.html" />
 <meta property="og:site_name" content="R Cambier" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2021-09-15T00:00:00-05:00" />
 <script type="application/ld+json">
-{"url":"https://rcambier.github.io/blog/2021/09/15/pca.html","@type":"BlogPosting","headline":"PCA","dateModified":"2021-09-15T00:00:00-05:00","datePublished":"2021-09-15T00:00:00-05:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://rcambier.github.io/blog/2021/09/15/pca.html"},"description":"R Cambier’s blog. About riddles and computer science.","@context":"https://schema.org"}</script>
+{"url":"https://rcambier.github.io/blog/ai/2021/09/15/pca.html","@type":"BlogPosting","headline":"PCA","dateModified":"2021-09-15T00:00:00-05:00","datePublished":"2021-09-15T00:00:00-05:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://rcambier.github.io/blog/ai/2021/09/15/pca.html"},"description":"PCA dimensionality reduction from scratch","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/blog/assets/css/style.css"><link rel="shortcut icon" type="image/x-icon" href="/blog/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
@@ -71,7 +71,7 @@ window.onload = wrap_img;
         <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
-    <h1 class="post-title p-name" itemprop="name headline">PCA</h1>
+    <h1 class="post-title p-name" itemprop="name headline">PCA</h1><p class="page-description">PCA dimensionality reduction from scratch</p>
 
     
       
@@ -109,14 +109,8 @@ window.onload = wrap_img;
         
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>PCA</p>
-<blockquote><p>PCA dimensionality reduction from scratch</p>
-</blockquote>
-<ul>
-<li>comments:true- badges: true</li>
-<li>categories: [ai]</li>
-<li>publishes: true</li>
-</ul>
+<h1 id="PCA">PCA<a class="anchor-link" href="#PCA"> </a></h1><p>The principal components are the eigenvectors+eigenvalues of the Covariance matrix of our data.</p>
+<p>This is because we are looking for the "Direction of stretching and how much streching happens" regarding the variance of our data.</p>
 
 </div>
 </div>
@@ -252,7 +246,15 @@ window.onload = wrap_img;
 
 
 
-  </div><a class="u-url" href="/blog/2021/09/15/pca.html" hidden></a>
+  </div><!-- from https://github.com/utterance/utterances -->
+<script src="https://utteranc.es/client.js"
+        repo="RCambier/blog"
+        issue-term="title"
+        label="blogpost-comment"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script><a class="u-url" href="/blog/ai/2021/09/15/pca.html" hidden></a>
 </article>
       </div>
     </main><footer class="site-footer h-card">
