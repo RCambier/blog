@@ -359,7 +359,7 @@
   
       ,"page1": {
           "title": "Ai from scratch",
-          "content": "When I learn about a new ML algorithm, the best way for me to understand it is to look at a very basic version written from scratch in Python. . This is a compilation of notebooks with very simple implementations of some ML algorithms. I try to only use numpy and scipy. . PCA Linear regression &amp; Logistic regression Hypothesis testing Ai from scratch",
+          "content": "When I learn about a new ML algorithm, the best way for me to understand it is to look at a very basic version written from scratch in Python. . This is a compilation of notebooks with very simple implementations of some ML algorithms. I try to only use numpy and scipy. . The goal is not to explain or teach. It&#39;s to capture the essence in a few simple lines of Python. . PCA Linear regression &amp; Logistic regression Hypothesis testing Ai from scratch",
           "url": "https://rcambier.github.io/blog/ai-from-scratch/",
           "relUrl": "/ai-from-scratch/",
           "date": ""
