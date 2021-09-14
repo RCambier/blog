@@ -15,7 +15,7 @@ What path do you follow ?
 <div class='answer-wrapper'>
 <div markdown="1" class='answer' style="color: grey">
 
-[Click the link]({{ site.baseurl }}/img/tree-path.png) to view an example of a path shorter than 13 km.
+[Click the link]({{ site.baseurl }}/images/tree-path.png) to view an example of a path shorter than 13 km.
 
 </div>
 </div>

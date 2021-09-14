@@ -12,7 +12,7 @@ Alice and Bob are taken prisoners by an evil logician. They are given one chance
 Alice and Bob are placed in cells that have a view of a courtyard with trees. There are 20 trees in all, of which Alice sees 12 and Bob sees 8.
 Neither prisoner knows how many trees the other sees. But each prisoner is told the trees are partitioned between them: together they see all the trees, but individually no tree is seen by both of them.
 
-![prisoners trees]({{ site.baseurl }}/img/prisoners-trees.png)
+![prisoners trees]({{ site.baseurl }}/images/prisoners-trees.png)
 
 They have to figure out the total number of trees, but they are not allowed to communicate with each other.
 Each day the logician visits Alice in her cell and asks, “Are there 18 or 20 trees in total?”
