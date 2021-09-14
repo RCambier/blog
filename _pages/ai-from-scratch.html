@@ -1,0 +1,24 @@
+---
+layout: default
+permalink: /ai-from-scratch/
+title: Ai from scratch
+search_exclude: false
+---
+
+<div class='listing col6 pad4h margin3'>
+<p>Riddles !</p>
+<p>I haven't invented any of those. I just found them online and thought they were good ones. </p>
+
+<p>The riddles are ranked by some measure of difficulty.</p>
+<br>
+</div>
+
+<div class='listing col6 pad4h margin3'>
+    {% assign posts = site.categories.blog | sort:'difficulty' %}
+    {% for item in  posts %}
+    <a class='item' href='{{site.baseurl}}{{item.url}}'>{{item.title}} (difficulty {{item.difficulty}})</a> 
+    <div> {{ item.excerpt | truncate: 50 }} </div>
+    <br>
+    {% endfor %}
+</div>
+    
