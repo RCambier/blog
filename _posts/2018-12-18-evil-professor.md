@@ -1,6 +1,6 @@
 ---
-layout: blog
-category: blog
+layout: post
+category: riddle
 published: true
 title: Evil professor
 difficulty: 99
