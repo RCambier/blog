@@ -315,6 +315,22 @@
   
 
   
+      ,"page3": {
+          "title": "Riddles",
+          "content": "Posts .",
+          "url": "https://rcambier.github.io/blog/riddles/",
+          "relUrl": "/riddles/",
+          "date": ""
+      }
+      
+  
+
+  
+  
+
+  
+
+  
   
 
   
@@ -323,11 +339,6 @@
   
 
   
-
-  
-  
-
-  
   
 
   
@@ -336,7 +347,7 @@
   
 
   
-      ,"page11": {
+      ,"page12": {
           "title": "",
           "content": "Sitemap: {{ “sitemap.xml” | absolute_url }} | .",
           "url": "https://rcambier.github.io/blog/robots.txt",
