@@ -2,21 +2,21 @@
   
     
         "post0": {
-            "title": "Three‘s a Crowd",
-            "content": "From: http://www.twinbear.com/riddles.html . (Clayton Lewis) After solving the riddle of the three wise folks, three scoundrels claim to be the smartest in the country. So you decide to give them a challenge. Suspecting that the thing they care about most is money, you give them $100 and tell them they are to divide this money observing the following rule: they are to discuss offers and counter-offers from each other and then take a vote. Majority vote wins. Sounds easy enough… now the question is, assuming each person is motivated to take the largest amount possible, what will the outcome be? . Note: careful… if the answer were that they split it 50% / 50% / 0%, or 1/3 / 1/3 / 1/3, it wouldn‘t be a riddle! . Note: careful… 96.6523544 % of people who send answers to this have not thought about it for even 1 minute. I guarantee you won‘t solve it in a minute. (96.6523544% of the time this guarantee is correct.) . Hover to show the answer. . I can not solve this one so far. If you can please share your answer! .",
-            "url": "https://rcambier.github.io/blog/blog/2021/01/05/scoundrels.html",
-            "relUrl": "/blog/2021/01/05/scoundrels.html",
-            "date": " • Jan 5, 2021"
+            "title": "ai_1",
+            "content": "If 3 cats take 3 minutes to catch 3 mouses, how many cats are needed to catch 100 mouses in 100 minutes ? . . Hover to show the answer. . You also need 3 cats. . If 3 cats take 3 minutes to catch 3 mouses, it means each cat takes 3 minutes to catch its own mouse. In 100 minutes, each of those cats will catch on average 33.333… mouses. So 3 cats are enough to catch 100 mouses in 100 minutes. . Said differently, if 3 cats take 3 minutes to catch 3 mouses, these 3 cats catch 1 mouse/minute. At that rate, they will capture 100 mouses in 100 minutes. .",
+            "url": "https://rcambier.github.io/blog/ai/2021/09/01/ai_1.md.html",
+            "relUrl": "/ai/2021/09/01/ai_1.md.html",
+            "date": " • Sep 1, 2021"
         }
         
     
   
     
         ,"post1": {
-            "title": "The newcomb poison",
-            "content": "You are put into a room with a suitcase and a flask of poison. . The suitcase has been filled either with 1 million dollar or with worthless magazines. . The poison is bad enough that you would never drink it for free, but it will not kill you. You would definitely drink it for 1 million dollar. It is going to give you a few days of headaches and feeling very ill. . Wether the suitace contains money or magazines depends on a prediction that was made by a machine. . If the machine predicts that you will drink the poison, the suitcase will contain the money | If the machine predicts that you will not drink the poison, the suitcase will be full of magazines. | . From more than 10 000 past experiments, we know that the machine has 95% accuracy on both cases. . You are now in the room. The prediction has been made on you and the suitcase has been filled accordingly. . Do you drink the poison and open the suitcase ? Or do you open the suitcase right away ? . Note: This is taken from Mr Phi video serie where he discusses the NewComb Paradox . Hover to show the answer. . My understanding at this time (early 2021) is the following: As a human being, you can not make a plan and stick to it. This would mean inhibiting your rationality. This is something that, unfortunately, we can not do. . So even if you 100% plan to drink the poison, you will doubt that decision once you are in the room. . I think I am not able to stick to a plan of drinking the poison. Therefore, I think I would not drink the poison and go straight for the suitcase. . This is concluding that there is no way for me to win the money. . Someone that could inhibit his rationality and stick to a plan could win the money. Someone not thinking about it too much and going for the poison could win the money. But as soon as you think too much about it, you understand that there is no way you actually drink the poison once you are in the room. . To help explain it: . The extreme case of a transparent suitcase. In that case, everyone will have to answer that they don’t drink the poison. | The extreme case of someone that can turn off his rationality. That person will be able to stick to his plan of drinking and actually win the money. But this is not possible for a normal human being. Look for the “fatality of rationality” for this concept. | . | .",
-            "url": "https://rcambier.github.io/blog/blog/2021/01/05/newcomb.html",
-            "relUrl": "/blog/2021/01/05/newcomb.html",
+            "title": "Three‘s a Crowd",
+            "content": "From: http://www.twinbear.com/riddles.html . (Clayton Lewis) After solving the riddle of the three wise folks, three scoundrels claim to be the smartest in the country. So you decide to give them a challenge. Suspecting that the thing they care about most is money, you give them $100 and tell them they are to divide this money observing the following rule: they are to discuss offers and counter-offers from each other and then take a vote. Majority vote wins. Sounds easy enough… now the question is, assuming each person is motivated to take the largest amount possible, what will the outcome be? . Note: careful… if the answer were that they split it 50% / 50% / 0%, or 1/3 / 1/3 / 1/3, it wouldn‘t be a riddle! . Note: careful… 96.6523544 % of people who send answers to this have not thought about it for even 1 minute. I guarantee you won‘t solve it in a minute. (96.6523544% of the time this guarantee is correct.) . Hover to show the answer. . I can not solve this one so far. If you can please share your answer! .",
+            "url": "https://rcambier.github.io/blog/riddle/2021/01/05/scoundrels.html",
+            "relUrl": "/riddle/2021/01/05/scoundrels.html",
             "date": " • Jan 5, 2021"
         }
         
@@ -24,32 +24,32 @@
   
     
         ,"post2": {
-            "title": "The blind pill",
-            "content": "You are blind. You have 2 blue pills and 2 red pills in a box. . You have to take 2 pills today and 2 tomorrow. Each day, exactly one blue and one red. If you don’t, you will die. If you take more, you will die. . How do you do it ? . Hover to show the answer. . One by one, you take the pill, break it in half, eat a half and keep the other half for tomorrow. This way, you will eat exactly 1 blue and 1 red pill per day. .",
-            "url": "https://rcambier.github.io/blog/blog/2020/07/29/pills.html",
-            "relUrl": "/blog/2020/07/29/pills.html",
-            "date": " • Jul 29, 2020"
+            "title": "The newcomb poison",
+            "content": "You are put into a room with a suitcase and a flask of poison. . The suitcase has been filled either with 1 million dollar or with worthless magazines. . The poison is bad enough that you would never drink it for free, but it will not kill you. You would definitely drink it for 1 million dollar. It is going to give you a few days of headaches and feeling very ill. . Wether the suitace contains money or magazines depends on a prediction that was made by a machine. . If the machine predicts that you will drink the poison, the suitcase will contain the money | If the machine predicts that you will not drink the poison, the suitcase will be full of magazines. | . From more than 10 000 past experiments, we know that the machine has 95% accuracy on both cases. . You are now in the room. The prediction has been made on you and the suitcase has been filled accordingly. . Do you drink the poison and open the suitcase ? Or do you open the suitcase right away ? . Note: This is taken from Mr Phi video serie where he discusses the NewComb Paradox . Hover to show the answer. . My understanding at this time (early 2021) is the following: As a human being, you can not make a plan and stick to it. This would mean inhibiting your rationality. This is something that, unfortunately, we can not do. . So even if you 100% plan to drink the poison, you will doubt that decision once you are in the room. . I think I am not able to stick to a plan of drinking the poison. Therefore, I think I would not drink the poison and go straight for the suitcase. . This is concluding that there is no way for me to win the money. . Someone that could inhibit his rationality and stick to a plan could win the money. Someone not thinking about it too much and going for the poison could win the money. But as soon as you think too much about it, you understand that there is no way you actually drink the poison once you are in the room. . To help explain it: . The extreme case of a transparent suitcase. In that case, everyone will have to answer that they don’t drink the poison. | The extreme case of someone that can turn off his rationality. That person will be able to stick to his plan of drinking and actually win the money. But this is not possible for a normal human being. Look for the “fatality of rationality” for this concept. | . | .",
+            "url": "https://rcambier.github.io/blog/riddle/2021/01/05/newcomb.html",
+            "relUrl": "/riddle/2021/01/05/newcomb.html",
+            "date": " • Jan 5, 2021"
         }
         
     
   
     
         ,"post3": {
-            "title": "The rope triangle",
-            "content": "You cut a rope in a random place. Then again in another random place. . You are left with 3 pieces. . What are the chances that you can form a triangle with those 3 pieces ? . Hover to show the answer. . 1/4. .",
-            "url": "https://rcambier.github.io/blog/blog/2020/04/19/rope-triangle.html",
-            "relUrl": "/blog/2020/04/19/rope-triangle.html",
-            "date": " • Apr 19, 2020"
+            "title": "The blind pill",
+            "content": "You are blind. You have 2 blue pills and 2 red pills in a box. . You have to take 2 pills today and 2 tomorrow. Each day, exactly one blue and one red. If you don’t, you will die. If you take more, you will die. . How do you do it ? . Hover to show the answer. . One by one, you take the pill, break it in half, eat a half and keep the other half for tomorrow. This way, you will eat exactly 1 blue and 1 red pill per day. .",
+            "url": "https://rcambier.github.io/blog/riddle/2020/07/29/pills.html",
+            "relUrl": "/riddle/2020/07/29/pills.html",
+            "date": " • Jul 29, 2020"
         }
         
     
   
     
         ,"post4": {
-            "title": "Reversed number",
-            "content": "Can you find a 4 digits number that gets reversed when multiplied by 4? . For example: if 4*1234 == 4321, 1234 would be an answer. Unfortunately, that is not the case. All digits need to be different. . Hover to show the answer. . 2178. .",
-            "url": "https://rcambier.github.io/blog/blog/2020/04/19/reverse-number.html",
-            "relUrl": "/blog/2020/04/19/reverse-number.html",
+            "title": "The rope triangle",
+            "content": "You cut a rope in a random place. Then again in another random place. . You are left with 3 pieces. . What are the chances that you can form a triangle with those 3 pieces ? . Hover to show the answer. . 1/4. .",
+            "url": "https://rcambier.github.io/blog/riddle/2020/04/19/rope-triangle.html",
+            "relUrl": "/riddle/2020/04/19/rope-triangle.html",
             "date": " • Apr 19, 2020"
         }
         
@@ -57,6 +57,17 @@
   
     
         ,"post5": {
+            "title": "Reversed number",
+            "content": "Can you find a 4 digits number that gets reversed when multiplied by 4? . For example: if 4*1234 == 4321, 1234 would be an answer. Unfortunately, that is not the case. All digits need to be different. . Hover to show the answer. . 2178. .",
+            "url": "https://rcambier.github.io/blog/riddle/2020/04/19/reverse-number.html",
+            "relUrl": "/riddle/2020/04/19/reverse-number.html",
+            "date": " • Apr 19, 2020"
+        }
+        
+    
+  
+    
+        ,"post6": {
             "title": "Fastpages Notebook Blog Post",
             "content": "About . This notebook is a demonstration of some of capabilities of fastpages with notebooks. . With fastpages you can save your jupyter notebooks into the _notebooks folder at the root of your repository, and they will be automatically be converted to Jekyll compliant blog posts! . Front Matter . The first cell in your Jupyter Notebook or markdown blog post contains front matter. Front matter is metadata that can turn on/off options in your Notebook. It is formatted like this: . # &quot;My Title&quot; &gt; &quot;Awesome summary&quot; - toc:true- branch: master - badges: true - comments: true - author: Hamel Husain &amp; Jeremy Howard - categories: [fastpages, jupyter] . Setting toc: true will automatically generate a table of contents | Setting badges: true will automatically include GitHub and Google Colab links to your notebook. | Setting comments: true will enable commenting on your blog post, powered by utterances. | . The title and description need to be enclosed in double quotes only if they include special characters such as a colon. More details and options for front matter can be viewed on the front matter section of the README. . Markdown Shortcuts . A #hide comment at the top of any code cell will hide both the input and output of that cell in your blog post. . A #hide_input comment at the top of any code cell will only hide the input of that cell. . The comment #hide_input was used to hide the code that produced this. . put a #collapse-hide flag at the top of any cell if you want to hide that cell by default, but give the reader the option to show it: . import pandas as pd import altair as alt . . put a #collapse-show flag at the top of any cell if you want to show that cell by default, but give the reader the option to hide it: . cars = &#39;https://vega.github.io/vega-datasets/data/cars.json&#39; movies = &#39;https://vega.github.io/vega-datasets/data/movies.json&#39; sp500 = &#39;https://vega.github.io/vega-datasets/data/sp500.csv&#39; stocks = &#39;https://vega.github.io/vega-datasets/data/stocks.csv&#39; flights = &#39;https://vega.github.io/vega-datasets/data/flights-5k.json&#39; . . place a #collapse-output flag at the top of any cell if you want to put the output under a collapsable element that is closed by default, but give the reader the option to open it: . print(&#39;The comment #collapse-output was used to collapse the output of this cell by default but you can expand it.&#39;) . The comment #collapse-output was used to collapse the output of this cell by default but you can expand it. . . Interactive Charts With Altair . Charts made with Altair remain interactive. Example charts taken from this repo, specifically this notebook. . Example 1: DropDown . # use specific hard-wired values as the initial selected values selection = alt.selection_single( name=&#39;Select&#39;, fields=[&#39;Major_Genre&#39;, &#39;MPAA_Rating&#39;], init={&#39;Major_Genre&#39;: &#39;Drama&#39;, &#39;MPAA_Rating&#39;: &#39;R&#39;}, bind={&#39;Major_Genre&#39;: alt.binding_select(options=genres), &#39;MPAA_Rating&#39;: alt.binding_radio(options=mpaa)} ) # scatter plot, modify opacity based on selection alt.Chart(df).mark_circle().add_selection( selection ).encode( x=&#39;Rotten_Tomatoes_Rating:Q&#39;, y=&#39;IMDB_Rating:Q&#39;, tooltip=&#39;Title:N&#39;, opacity=alt.condition(selection, alt.value(0.75), alt.value(0.05)) ) . Example 2: Tooltips . alt.Chart(df).mark_circle().add_selection( alt.selection_interval(bind=&#39;scales&#39;, encodings=[&#39;x&#39;]) ).encode( alt.X(&#39;Rotten_Tomatoes_Rating&#39;, type=&#39;quantitative&#39;), alt.Y(&#39;IMDB_Rating&#39;, type=&#39;quantitative&#39;, axis=alt.Axis(minExtent=30)), # y=alt.Y(&#39;IMDB_Rating:Q&#39;, ), # use min extent to stabilize axis title placement tooltip=[&#39;Title:N&#39;, &#39;Release_Date:N&#39;, &#39;IMDB_Rating:Q&#39;, &#39;Rotten_Tomatoes_Rating:Q&#39;] ).properties( width=500, height=400 ) . Example 3: More Tooltips . label = alt.selection_single( encodings=[&#39;x&#39;], # limit selection to x-axis value on=&#39;mouseover&#39;, # select on mouseover events nearest=True, # select data point nearest the cursor empty=&#39;none&#39; # empty selection includes no data points ) # define our base line chart of stock prices base = alt.Chart().mark_line().encode( alt.X(&#39;date:T&#39;), alt.Y(&#39;price:Q&#39;, scale=alt.Scale(type=&#39;log&#39;)), alt.Color(&#39;symbol:N&#39;) ) alt.layer( base, # base line chart # add a rule mark to serve as a guide line alt.Chart().mark_rule(color=&#39;#aaa&#39;).encode( x=&#39;date:T&#39; ).transform_filter(label), # add circle marks for selected time points, hide unselected points base.mark_circle().encode( opacity=alt.condition(label, alt.value(1), alt.value(0)) ).add_selection(label), # add white stroked text to provide a legible background for labels base.mark_text(align=&#39;left&#39;, dx=5, dy=-5, stroke=&#39;white&#39;, strokeWidth=2).encode( text=&#39;price:Q&#39; ).transform_filter(label), # add text labels for stock prices base.mark_text(align=&#39;left&#39;, dx=5, dy=-5).encode( text=&#39;price:Q&#39; ).transform_filter(label), data=stocks ).properties( width=500, height=400 ) . Data Tables . You can display tables per the usual way in your blog: . df[[&#39;Title&#39;, &#39;Worldwide_Gross&#39;, &#39;Production_Budget&#39;, &#39;Distributor&#39;, &#39;MPAA_Rating&#39;, &#39;IMDB_Rating&#39;, &#39;Rotten_Tomatoes_Rating&#39;]].head() . Title Worldwide_Gross Production_Budget Distributor MPAA_Rating IMDB_Rating Rotten_Tomatoes_Rating . 0 The Land Girls | 146083.0 | 8000000.0 | Gramercy | R | 6.1 | NaN | . 1 First Love, Last Rites | 10876.0 | 300000.0 | Strand | R | 6.9 | NaN | . 2 I Married a Strange Person | 203134.0 | 250000.0 | Lionsgate | None | 6.8 | NaN | . 3 Let&#39;s Talk About Sex | 373615.0 | 300000.0 | Fine Line | None | NaN | 13.0 | . 4 Slam | 1087521.0 | 1000000.0 | Trimark | R | 3.4 | 62.0 | . Images . Local Images . You can reference local images and they will be copied and rendered on your blog automatically. You can include these with the following markdown syntax: . ![](my_icons/fastai_logo.png) . . Remote Images . Remote images can be included with the following markdown syntax: . ![](https://image.flaticon.com/icons/svg/36/36686.svg) . . Animated Gifs . Animated Gifs work, too! . ![](https://upload.wikimedia.org/wikipedia/commons/7/71/ChessPawnSpecialMoves.gif) . . Captions . You can include captions with markdown images like this: . ![](https://www.fast.ai/images/fastai_paper/show_batch.png &quot;Credit: https://www.fast.ai/2020/02/13/fastai-A-Layered-API-for-Deep-Learning/&quot;) . . Other Elements . GitHub Flavored Emojis . Typing I give this post two :+1:! will render this: . I give this post two :+1:! . Tweetcards . Typing &gt; twitter: https://twitter.com/jakevdp/status/1204765621767901185?s=20 will render this: Altair 4.0 is released! https://t.co/PCyrIOTcvvTry it with: pip install -U altairThe full list of changes is at https://t.co/roXmzcsT58 ...read on for some highlights. pic.twitter.com/vWJ0ZveKbZ . &mdash; Jake VanderPlas (@jakevdp) December 11, 2019 . Youtube Videos . Typing &gt; youtube: https://youtu.be/XfoYk_Z5AkI will render this: . Boxes / Callouts . Typing &gt; Warning: There will be no second warning! will render this: . Warning: There will be no second warning! . Typing &gt; Important: Pay attention! It&#39;s important. will render this: . Important: Pay attention! It&#8217;s important. . Typing &gt; Tip: This is my tip. will render this: . Tip: This is my tip. . Typing &gt; Note: Take note of this. will render this: . Note: Take note of this. . Typing &gt; Note: A doc link to [an example website: fast.ai](https://www.fast.ai/) should also work fine. will render in the docs: . Note: A doc link to an example website: fast.ai should also work fine. . Footnotes . You can have footnotes in notebooks, however the syntax is different compared to markdown documents. This guide provides more detail about this syntax, which looks like this: . For example, here is a footnote {% fn 1 %}. And another {% fn 2 %} {{ &#39;This is the footnote.&#39; | fndetail: 1 }} {{ &#39;This is the other footnote. You can even have a [link](www.github.com)!&#39; | fndetail: 2 }} . For example, here is a footnote 1. . And another 2 . 1. This is the footnote.↩ . 2. This is the other footnote. You can even have a link!↩ .",
             "url": "https://rcambier.github.io/blog/jupyter/2020/02/20/test.html",
@@ -67,7 +78,7 @@
     
   
     
-        ,"post6": {
+        ,"post7": {
             "title": "An Example Markdown Post",
             "content": "Example Markdown Post . Basic setup . Jekyll requires blog post files to be named according to the following format: . YEAR-MONTH-DAY-filename.md . Where YEAR is a four-digit number, MONTH and DAY are both two-digit numbers, and filename is whatever file name you choose, to remind yourself what this post is about. .md is the file extension for markdown files. . The first line of the file should start with a single hash character, then a space, then your title. This is how you create a “level 1 heading” in markdown. Then you can create level 2, 3, etc headings as you wish but repeating the hash character, such as you see in the line ## File names above. . Basic formatting . You can use italics, bold, code font text, and create links. Here’s a footnote 1. Here’s a horizontal rule: . . Lists . Here’s a list: . item 1 | item 2 | . And a numbered list: . item 1 | item 2 | Boxes and stuff . This is a quotation . . You can include alert boxes …and… . . You can include info boxes Images . . Code . You can format text and code per usual . General preformatted text: . # Do a thing do_thing() . Python code and output: . # Prints &#39;2&#39; print(1+1) . 2 . Formatting text as shell commands: . echo &quot;hello world&quot; ./some_script.sh --option &quot;value&quot; wget https://example.com/cat_photo1.png . Formatting text as YAML: . key: value - another_key: &quot;another value&quot; . Tables . Column 1 Column 2 . A thing | Another thing | . Tweetcards . Altair 4.0 is released! https://t.co/PCyrIOTcvvTry it with: pip install -U altairThe full list of changes is at https://t.co/roXmzcsT58 ...read on for some highlights. pic.twitter.com/vWJ0ZveKbZ . &mdash; Jake VanderPlas (@jakevdp) December 11, 2019 Footnotes . This is the footnote. &#8617; . |",
             "url": "https://rcambier.github.io/blog/markdown/2020/01/14/test-markdown-post.html",
@@ -78,22 +89,11 @@
     
   
     
-        ,"post7": {
+        ,"post8": {
             "title": "Surprise birthday",
             "content": "Albert and Bernard just become friends with Cheryl, and they want to know when her birthday is. Cheryl gives them a list of 10 possible dates. . May 15 | May 16 | May 19 | June 17 | June 18 | July 14 | July 16 | August 14 | August 15 | August 17 | . Chely then tells Albert and Bernard separately the month and the day of her birthday respectively. . Albert: I don’t know when Cheryl’s birthday is, but I know that Bernard does not know too. . Bernard: At first I don’t know when Cheryl’s birthday is, but I know now. . Albert: Then I also know when Cheryl’s birthday is. . So when is Cheryl’s birthday ? . Hover to show the answer. . It is the July 16 . Albert (A) knows the month. | Bernard (B) knows the day. | If A knows the month and knows that B doesn’t know, it means that it is a month that only contains day that you can also find in other proposed months. Otherwise A wouldn’t be so sure that B doens’t know. So it cannot be May because if it was May 19, B would know. It cannot be June, because if it was June 18, B would know. It can be July or August. | B says he now knows when the birthday is. B just deduced, like us, that it could be July or August because of what A just said. If he now knows when it is, it cannot be the 14. So it is the July 16, August 15 or August 17. | A then says that he also now knows. So it has to be the July 16, since that is the only month where A has enough information to know the exact birthdate. If it was August, A would still need more information to differentiate between August 15 and August 17. | .",
-            "url": "https://rcambier.github.io/blog/blog/2018/12/26/surprise-birthday.html",
-            "relUrl": "/blog/2018/12/26/surprise-birthday.html",
-            "date": " • Dec 26, 2018"
-        }
-        
-    
-  
-    
-        ,"post8": {
-            "title": "Simple Maths",
-            "content": "How do you make 26 by using 5, 5, 5 and 1. You have to use each exactly once. You can use the basic math operations (+, -, *, /, (, ) ). . Hover to show the answer. . (5 + (1/5))*5 = 26 .",
-            "url": "https://rcambier.github.io/blog/blog/2018/12/26/simple-maths.html",
-            "relUrl": "/blog/2018/12/26/simple-maths.html",
+            "url": "https://rcambier.github.io/blog/riddle/2018/12/26/surprise-birthday.html",
+            "relUrl": "/riddle/2018/12/26/surprise-birthday.html",
             "date": " • Dec 26, 2018"
         }
         
@@ -101,10 +101,10 @@
   
     
         ,"post9": {
-            "title": "Potatoes",
-            "content": "A farmer has 100kg of potatoes. At the start, they are composed of 99% of water (the water is 99% of the total weight) and 1% of dry matter (the dry matter is 1% of the total weight). Later, during storage and because of evaporation, the water percentage drops to 98%. What is the total weight of the potatoes then? . Hover to show the answer. . 50kg. . At the start, there are 99kg of water and 1kg of dry matter. Later, the quantity of dry matter didn’t change, but it is now representing 2% of the total mass. If 1kg is 2%, then 100% is 50kg. .",
-            "url": "https://rcambier.github.io/blog/blog/2018/12/26/potatoes.html",
-            "relUrl": "/blog/2018/12/26/potatoes.html",
+            "title": "Simple Maths",
+            "content": "How do you make 26 by using 5, 5, 5 and 1. You have to use each exactly once. You can use the basic math operations (+, -, *, /, (, ) ). . Hover to show the answer. . (5 + (1/5))*5 = 26 .",
+            "url": "https://rcambier.github.io/blog/riddle/2018/12/26/simple-maths.html",
+            "relUrl": "/riddle/2018/12/26/simple-maths.html",
             "date": " • Dec 26, 2018"
         }
         
@@ -112,10 +112,10 @@
   
     
         ,"post10": {
-            "title": "4 Pieces",
-            "content": "There are 4 coins on a quadrant. They are not visible to you. . . If the 4 coins are heads or the four coins are tails, the center light will light up. You have 5 turns to make the center light light up. Each turn, you can choose 2 coins that you reveal (you see if they are heads or tails) and you can flip any of them if you want to. You can flip one, both, or none. After that, they are hidden back from you. After each turn, we spin the quadrant so fast that you can not keep track of wich two coins you interacted with last turn. If the coins are randomly initialized, what strategy allows you to be sure to turn the light on ? . Hover to show the answer. . By following this strategy, you will be sure to turn on the light. .",
-            "url": "https://rcambier.github.io/blog/blog/2018/12/26/4-pieces.html",
-            "relUrl": "/blog/2018/12/26/4-pieces.html",
+            "title": "Potatoes",
+            "content": "A farmer has 100kg of potatoes. At the start, they are composed of 99% of water (the water is 99% of the total weight) and 1% of dry matter (the dry matter is 1% of the total weight). Later, during storage and because of evaporation, the water percentage drops to 98%. What is the total weight of the potatoes then? . Hover to show the answer. . 50kg. . At the start, there are 99kg of water and 1kg of dry matter. Later, the quantity of dry matter didn’t change, but it is now representing 2% of the total mass. If 1kg is 2%, then 100% is 50kg. .",
+            "url": "https://rcambier.github.io/blog/riddle/2018/12/26/potatoes.html",
+            "relUrl": "/riddle/2018/12/26/potatoes.html",
             "date": " • Dec 26, 2018"
         }
         
@@ -123,21 +123,21 @@
   
     
         ,"post11": {
-            "title": "Running in circle",
-            "content": "If I can make it around a running track once by going 10 km/h, what speed should I be running a second lap to have an average speed of 20 km/h for the two laps ? . Hover to show the answer. . This is impossible, I need to be infinitely fast. . Imagine a 10km track. It will take me 1 hour to make a lap at 10km/h. With a second lap, it becomes 20km. To have a 20km/h average speed, I need to do those 2 laps in 1 hour. . But I already spent 1 hour, so I should be infinitely fast for the second lap, which is impossible. .",
-            "url": "https://rcambier.github.io/blog/blog/2018/12/25/running-in-circle.html",
-            "relUrl": "/blog/2018/12/25/running-in-circle.html",
-            "date": " • Dec 25, 2018"
+            "title": "4 Pieces",
+            "content": "There are 4 coins on a quadrant. They are not visible to you. . . If the 4 coins are heads or the four coins are tails, the center light will light up. You have 5 turns to make the center light light up. Each turn, you can choose 2 coins that you reveal (you see if they are heads or tails) and you can flip any of them if you want to. You can flip one, both, or none. After that, they are hidden back from you. After each turn, we spin the quadrant so fast that you can not keep track of wich two coins you interacted with last turn. If the coins are randomly initialized, what strategy allows you to be sure to turn the light on ? . Hover to show the answer. . By following this strategy, you will be sure to turn on the light. .",
+            "url": "https://rcambier.github.io/blog/riddle/2018/12/26/4-pieces.html",
+            "relUrl": "/riddle/2018/12/26/4-pieces.html",
+            "date": " • Dec 26, 2018"
         }
         
     
   
     
         ,"post12": {
-            "title": "Prisoner's switch",
-            "content": "The warden meets with 23 new prisoners when they arrive. He tells them, “You may meet today and plan a strategy. But after today, you will be in isolated cells and will have no communication with one another. . “In the prison there is a switch room which contains two light switches labeled A and B, each of which can be in either the ‘on’ or the ‘off’ position. BOTH SWITCHES ARE IN THEIR OFF POSITIONS NOW.* The switches are not connected to anything. . “After today, from time to time whenever I feel so inclined, I will select one prisoner at random and escort him to the switch room. This prisoner will select one of the two switches and reverse its position. He must move one, but only one of the switches. He can’t move both but he can’t move none either. Then he’ll be led back to his cell.” . “No one else will enter the switch room until I lead the next prisoner there, and he’ll be instructed to do the same thing. I’m going to choose prisoners at random. I may choose the same guy three times in a row, or I may jump around and come back.” . “But, given enough time, everyone will eventually visit the switch room as many times as everyone else. At any time any one of you may declare to me, ‘We have all visited the switch room.’ . “If it is true, then you will all be set free. If it is false, and somebody has not yet visited the switch room, you will be fed to the alligators.” . *note - the only difference from Scenario B, the original position of the 2 switches are known. . Hover to show the answer. . The strategy is the following: . They choose one prisoner that will be the counter. Let’s name the two switches A and B. The counter is the only prisoner allowed to turn switch A off. When the other prisoner enter the room, if they have never done it, and if the switch A is off, they put it to ON. If they already put the A switch to ON or if they enter en the A switch is ON, they simply switch the B switch, in whatever position. . The counter will be able to count the number of prisoner that have entered the room by counting the number of times he has to put the A switch to OFF. .",
-            "url": "https://rcambier.github.io/blog/blog/2018/12/25/prisoners-switch.html",
-            "relUrl": "/blog/2018/12/25/prisoners-switch.html",
+            "title": "Running in circle",
+            "content": "If I can make it around a running track once by going 10 km/h, what speed should I be running a second lap to have an average speed of 20 km/h for the two laps ? . Hover to show the answer. . This is impossible, I need to be infinitely fast. . Imagine a 10km track. It will take me 1 hour to make a lap at 10km/h. With a second lap, it becomes 20km. To have a 20km/h average speed, I need to do those 2 laps in 1 hour. . But I already spent 1 hour, so I should be infinitely fast for the second lap, which is impossible. .",
+            "url": "https://rcambier.github.io/blog/riddle/2018/12/25/running-in-circle.html",
+            "relUrl": "/riddle/2018/12/25/running-in-circle.html",
             "date": " • Dec 25, 2018"
         }
         
@@ -145,10 +145,10 @@
   
     
         ,"post13": {
-            "title": "King's poison",
-            "content": "In a far away land, it was known that if you drank poison, the only way to save yourself is to drink a stronger poison in the next 12 hours, which neutralizes the weaker poison. . The king that ruled the land wanted to make sure that he possessed the strongest poison in the kingdom, in order to ensure his survival, in any situation. So the king called the kingdom’s pharmacist and the kingdom’s treasurer, he gave each a week to make the strongest poison. Then, each would drink the other one’s poison, then his own, and the one that will survive, will be the one that had the stronger poison. . The pharmacist went straight to work, but the treasurer knew he had no chance, for the pharmacist was much more experienced in this field, so instead, he made up a sneaky plan to survive and make sure the pharmacist dies. . On the last day the pharmacist suddenly realized that the treasurer would know he had no chance, so he must have a plan. After a little thought, the pharmacist realized what the treasurer’s plan must be, and he concocted a counter plan, to make sure he survives and the treasurer dies. When the time came, the king summoned both of them. They drank the poisons as planned, the treasurer died, and the pharmacist survived. . What happened ? What was the treasurer’s plan ? What was the pharmacist counter-plan ? And did the king get what he wanted ? . . Hover to show the answer. . The treasurer’s plan was to drink a weak poison before going to the king’s challenge, and bring water to the challenge. In front of the king, he would drink the strong pharmacist’s poison, which would neutralize his, and then drink the water he brought. On the opposite, the pharmacist would drink water, followed by his own poison, and then die. . When the pharmacist realises that, he decides to also bring water. That way he drinks water both times, and the treasurer dies from his weak poison. .",
-            "url": "https://rcambier.github.io/blog/blog/2018/12/25/poison.html",
-            "relUrl": "/blog/2018/12/25/poison.html",
+            "title": "Prisoner's switch",
+            "content": "The warden meets with 23 new prisoners when they arrive. He tells them, “You may meet today and plan a strategy. But after today, you will be in isolated cells and will have no communication with one another. . “In the prison there is a switch room which contains two light switches labeled A and B, each of which can be in either the ‘on’ or the ‘off’ position. BOTH SWITCHES ARE IN THEIR OFF POSITIONS NOW.* The switches are not connected to anything. . “After today, from time to time whenever I feel so inclined, I will select one prisoner at random and escort him to the switch room. This prisoner will select one of the two switches and reverse its position. He must move one, but only one of the switches. He can’t move both but he can’t move none either. Then he’ll be led back to his cell.” . “No one else will enter the switch room until I lead the next prisoner there, and he’ll be instructed to do the same thing. I’m going to choose prisoners at random. I may choose the same guy three times in a row, or I may jump around and come back.” . “But, given enough time, everyone will eventually visit the switch room as many times as everyone else. At any time any one of you may declare to me, ‘We have all visited the switch room.’ . “If it is true, then you will all be set free. If it is false, and somebody has not yet visited the switch room, you will be fed to the alligators.” . *note - the only difference from Scenario B, the original position of the 2 switches are known. . Hover to show the answer. . The strategy is the following: . They choose one prisoner that will be the counter. Let’s name the two switches A and B. The counter is the only prisoner allowed to turn switch A off. When the other prisoner enter the room, if they have never done it, and if the switch A is off, they put it to ON. If they already put the A switch to ON or if they enter en the A switch is ON, they simply switch the B switch, in whatever position. . The counter will be able to count the number of prisoner that have entered the room by counting the number of times he has to put the A switch to OFF. .",
+            "url": "https://rcambier.github.io/blog/riddle/2018/12/25/prisoners-switch.html",
+            "relUrl": "/riddle/2018/12/25/prisoners-switch.html",
             "date": " • Dec 25, 2018"
         }
         
@@ -156,10 +156,10 @@
   
     
         ,"post14": {
-            "title": "Lost father",
-            "content": "Question: A mother is 21 years older than her child. In 6 years the mother will be 5 times older than her baby. . Where is the father? . Hover to show the answer. . M = mother | C = child . | M = C + 21 | M + 6 = 5* (C + 6) . | Solving gives C = -3/4 | -3/4 year means minus 9 months. If the child is -9 months, it means that the father is with the mother, in their bed… | .",
-            "url": "https://rcambier.github.io/blog/blog/2018/12/25/lost-father.html",
-            "relUrl": "/blog/2018/12/25/lost-father.html",
+            "title": "King's poison",
+            "content": "In a far away land, it was known that if you drank poison, the only way to save yourself is to drink a stronger poison in the next 12 hours, which neutralizes the weaker poison. . The king that ruled the land wanted to make sure that he possessed the strongest poison in the kingdom, in order to ensure his survival, in any situation. So the king called the kingdom’s pharmacist and the kingdom’s treasurer, he gave each a week to make the strongest poison. Then, each would drink the other one’s poison, then his own, and the one that will survive, will be the one that had the stronger poison. . The pharmacist went straight to work, but the treasurer knew he had no chance, for the pharmacist was much more experienced in this field, so instead, he made up a sneaky plan to survive and make sure the pharmacist dies. . On the last day the pharmacist suddenly realized that the treasurer would know he had no chance, so he must have a plan. After a little thought, the pharmacist realized what the treasurer’s plan must be, and he concocted a counter plan, to make sure he survives and the treasurer dies. When the time came, the king summoned both of them. They drank the poisons as planned, the treasurer died, and the pharmacist survived. . What happened ? What was the treasurer’s plan ? What was the pharmacist counter-plan ? And did the king get what he wanted ? . . Hover to show the answer. . The treasurer’s plan was to drink a weak poison before going to the king’s challenge, and bring water to the challenge. In front of the king, he would drink the strong pharmacist’s poison, which would neutralize his, and then drink the water he brought. On the opposite, the pharmacist would drink water, followed by his own poison, and then die. . When the pharmacist realises that, he decides to also bring water. That way he drinks water both times, and the treasurer dies from his weak poison. .",
+            "url": "https://rcambier.github.io/blog/riddle/2018/12/25/poison.html",
+            "relUrl": "/riddle/2018/12/25/poison.html",
             "date": " • Dec 25, 2018"
         }
         
@@ -167,10 +167,10 @@
   
     
         ,"post15": {
-            "title": "Gold coins",
-            "content": "There is a stack of 100 coins. Each coin has a silver side and a golden side. 20 coins are silver side up. The rest is golden side up. You are in a totally dark room. How do you make 2 stacks that contain as many coins with silver side up ? (we don’t care about how many are golden side up in each group) There is no way to differentiate the coins in the dark (by touch or other means.) . Hover to show the answer. . You take 20 coins from the stack and flip them to create another stack. The two stacks are the original stack withtout the 20 coins, and the stack of 20 coins you created. . If the 20 coins you select are golden side up, then you will flip them and have 20 silver coins in each stack. . If the 20 coins you select are silver side up, then you will flip them and have 0 silver coins in each stack. . If the 20 coins you select contain n silver and 20-n gold coins, then you will flip them and have 20-n silver coins in each stack. .",
-            "url": "https://rcambier.github.io/blog/blog/2018/12/25/gold-coins.html",
-            "relUrl": "/blog/2018/12/25/gold-coins.html",
+            "title": "Lost father",
+            "content": "Question: A mother is 21 years older than her child. In 6 years the mother will be 5 times older than her baby. . Where is the father? . Hover to show the answer. . M = mother | C = child . | M = C + 21 | M + 6 = 5* (C + 6) . | Solving gives C = -3/4 | -3/4 year means minus 9 months. If the child is -9 months, it means that the father is with the mother, in their bed… | .",
+            "url": "https://rcambier.github.io/blog/riddle/2018/12/25/lost-father.html",
+            "relUrl": "/riddle/2018/12/25/lost-father.html",
             "date": " • Dec 25, 2018"
         }
         
@@ -178,10 +178,10 @@
   
     
         ,"post16": {
-            "title": "Cats and mouses",
-            "content": "If 3 cats take 3 minutes to catch 3 mouses, how many cats are needed to catch 100 mouses in 100 minutes ? . . Hover to show the answer. . You also need 3 cats. . If 3 cats take 3 minutes to catch 3 mouses, it means each cat takes 3 minutes to catch its own mouse. In 100 minutes, each of those cats will catch on average 33.333… mouses. So 3 cats are enough to catch 100 mouses in 100 minutes. . Said differently, if 3 cats take 3 minutes to catch 3 mouses, these 3 cats catch 1 mouse/minute. At that rate, they will capture 100 mouses in 100 minutes. .",
-            "url": "https://rcambier.github.io/blog/blog/2018/12/25/cats-and-mouses.html",
-            "relUrl": "/blog/2018/12/25/cats-and-mouses.html",
+            "title": "Gold coins",
+            "content": "There is a stack of 100 coins. Each coin has a silver side and a golden side. 20 coins are silver side up. The rest is golden side up. You are in a totally dark room. How do you make 2 stacks that contain as many coins with silver side up ? (we don’t care about how many are golden side up in each group) There is no way to differentiate the coins in the dark (by touch or other means.) . Hover to show the answer. . You take 20 coins from the stack and flip them to create another stack. The two stacks are the original stack withtout the 20 coins, and the stack of 20 coins you created. . If the 20 coins you select are golden side up, then you will flip them and have 20 silver coins in each stack. . If the 20 coins you select are silver side up, then you will flip them and have 0 silver coins in each stack. . If the 20 coins you select contain n silver and 20-n gold coins, then you will flip them and have 20-n silver coins in each stack. .",
+            "url": "https://rcambier.github.io/blog/riddle/2018/12/25/gold-coins.html",
+            "relUrl": "/riddle/2018/12/25/gold-coins.html",
             "date": " • Dec 25, 2018"
         }
         
@@ -189,10 +189,10 @@
   
     
         ,"post17": {
-            "title": "Broken plane",
-            "content": "Imagine a 747 is sitting on a conveyor belt, as wide and long as a runway. The conveyor belt is designed to [try to ?] exactly match the speed of the wheels, moving in the opposite direction. Can the plane take off? (different answers if you consider the words between brackets or not) . Hover to show the answer. . Yes. (Please don’t hit me). . If by speed of the wheels, we consider the speed of the the center of the wheels relative to the ground, then the answer is yes. The plane doesn’t use its wheel to take off. The motor thrust don’t care that the wheels are spinning or sliding or doing nothing. You have to realize that this is not like a car, the force is no pushing at the wheels, the force making the plane go forward is pushing where the motors are attached. So the wheels are just going to spin faster, and if the conveyor belt is long enough, the plane will take off. . Another way to see it is that the wheels are just there to keep the plane above the ground. They can spin at the speed they want, if the plane can move forward, it will take off. . Now, if by speed of the wheels, we consider the angular speed of the wheels then it gets complicated. This would basically be like saying “the conveyor belt does everything possible to make the plane not move”. . At that point, if the plane moves forward, the problem becomes mathematically impossible. When the plane is not moving, the angular speed is 0. When the plane moves, the angular speed is, let’s say, 10 ms/s. Now if the conveyor belt matches that speed, it will spin at 10m/s. But since the plane is still moving forward, this will make the wheels go at 20m/s (We consider here that the friction of the wheels is 0, they don’t affect the plane). So now the conveyor belt will have to match that speed. If the conveyor belt just tries to match the angular speed of the wheels, it will just go faster and faster up to infinity. If the friction of the wheels is 0, you could still argue in that situation that the plane will take off, with the wheel spinning infinitely fast in the opposite direction. . If the friction of the wheels is bigger than 0, you could argue that the threadmill manages to stop the plane. . If instead of the treadmill “trying to match” you have the treadmill “exactly matching” the speed of the wheels, than this becomes impossible. As soon as the plane starts going forward, this becomes an impossible situation because the treadmill has to match a speed that grows as it would try to match it. . Note that it doesn’t mean that the plane does not take off, but that the problem is mathematically impossible. . You can have a look at the excellent explanation from Randall Monroe on this problem here .",
-            "url": "https://rcambier.github.io/blog/blog/2018/12/25/broken-plane.html",
-            "relUrl": "/blog/2018/12/25/broken-plane.html",
+            "title": "Cats and mouses",
+            "content": "If 3 cats take 3 minutes to catch 3 mouses, how many cats are needed to catch 100 mouses in 100 minutes ? . . Hover to show the answer. . You also need 3 cats. . If 3 cats take 3 minutes to catch 3 mouses, it means each cat takes 3 minutes to catch its own mouse. In 100 minutes, each of those cats will catch on average 33.333… mouses. So 3 cats are enough to catch 100 mouses in 100 minutes. . Said differently, if 3 cats take 3 minutes to catch 3 mouses, these 3 cats catch 1 mouse/minute. At that rate, they will capture 100 mouses in 100 minutes. .",
+            "url": "https://rcambier.github.io/blog/riddle/2018/12/25/cats-and-mouses.html",
+            "relUrl": "/riddle/2018/12/25/cats-and-mouses.html",
             "date": " • Dec 25, 2018"
         }
         
@@ -200,21 +200,21 @@
   
     
         ,"post18": {
-            "title": "Lost in the woods",
-            "content": "You are in a square forest of side 100km. You are 2km away from its border, but you don’t know in what direction or at what angle (It could be at 2km with an angle of 16.123 degree for example.) You need to exit the forest, but you can walk a maximum of 13km. What path do you follow ? . Hover to show the answer. . Click the link to view an example of a path shorter than 13 km. .",
-            "url": "https://rcambier.github.io/blog/blog/2018/12/18/lost-in-the-woods.html",
-            "relUrl": "/blog/2018/12/18/lost-in-the-woods.html",
-            "date": " • Dec 18, 2018"
+            "title": "Broken plane",
+            "content": "Imagine a 747 is sitting on a conveyor belt, as wide and long as a runway. The conveyor belt is designed to [try to ?] exactly match the speed of the wheels, moving in the opposite direction. Can the plane take off? (different answers if you consider the words between brackets or not) . Hover to show the answer. . Yes. (Please don’t hit me). . If by speed of the wheels, we consider the speed of the the center of the wheels relative to the ground, then the answer is yes. The plane doesn’t use its wheel to take off. The motor thrust don’t care that the wheels are spinning or sliding or doing nothing. You have to realize that this is not like a car, the force is no pushing at the wheels, the force making the plane go forward is pushing where the motors are attached. So the wheels are just going to spin faster, and if the conveyor belt is long enough, the plane will take off. . Another way to see it is that the wheels are just there to keep the plane above the ground. They can spin at the speed they want, if the plane can move forward, it will take off. . Now, if by speed of the wheels, we consider the angular speed of the wheels then it gets complicated. This would basically be like saying “the conveyor belt does everything possible to make the plane not move”. . At that point, if the plane moves forward, the problem becomes mathematically impossible. When the plane is not moving, the angular speed is 0. When the plane moves, the angular speed is, let’s say, 10 ms/s. Now if the conveyor belt matches that speed, it will spin at 10m/s. But since the plane is still moving forward, this will make the wheels go at 20m/s (We consider here that the friction of the wheels is 0, they don’t affect the plane). So now the conveyor belt will have to match that speed. If the conveyor belt just tries to match the angular speed of the wheels, it will just go faster and faster up to infinity. If the friction of the wheels is 0, you could still argue in that situation that the plane will take off, with the wheel spinning infinitely fast in the opposite direction. . If the friction of the wheels is bigger than 0, you could argue that the threadmill manages to stop the plane. . If instead of the treadmill “trying to match” you have the treadmill “exactly matching” the speed of the wheels, than this becomes impossible. As soon as the plane starts going forward, this becomes an impossible situation because the treadmill has to match a speed that grows as it would try to match it. . Note that it doesn’t mean that the plane does not take off, but that the problem is mathematically impossible. . You can have a look at the excellent explanation from Randall Monroe on this problem here .",
+            "url": "https://rcambier.github.io/blog/riddle/2018/12/25/broken-plane.html",
+            "relUrl": "/riddle/2018/12/25/broken-plane.html",
+            "date": " • Dec 25, 2018"
         }
         
     
   
     
         ,"post19": {
-            "title": "Evil professor",
-            "content": "The evil professor says to the students: you are going to have an exam next week. I’m not telling you which day, but I am telling you that it will be unexpected (i.e., the day of the exam you won’t be sure whether the exam is that day or not). I’m assuming that the week starts on Monday and ends on Friday. . So this is what the students think: . Okay, it can’t be on Friday, because if Friday comes and we haven’t had the test yet, then in the morning we’ll surely know it’s that day. So it will be a day from Monday to Thursday. After pondering a bit, they realise that it can’t be Thursday either, for the same reason: If Thursday comes and they haven’t had the exam they’ll think “we know it’s not Friday, therefore it has to be today”. So Thursday wouldn’t be a surprise either. Similarly (by induction), all days are eliminated ! . Then they are happy and think the evil professor made a promise he couldn’t hold, and don’t prepare for the test. However, the next week, on Wednesday, they have the exam. And all are surprised. . Where is the flaw in the logic ? . Hover to show the answer. . There is no answer to this… I will try to explain later. .",
-            "url": "https://rcambier.github.io/blog/blog/2018/12/18/evil-professor.html",
-            "relUrl": "/blog/2018/12/18/evil-professor.html",
+            "title": "Lost in the woods",
+            "content": "You are in a square forest of side 100km. You are 2km away from its border, but you don’t know in what direction or at what angle (It could be at 2km with an angle of 16.123 degree for example.) You need to exit the forest, but you can walk a maximum of 13km. What path do you follow ? . Hover to show the answer. . Click the link to view an example of a path shorter than 13 km. .",
+            "url": "https://rcambier.github.io/blog/riddle/2018/12/18/lost-in-the-woods.html",
+            "relUrl": "/riddle/2018/12/18/lost-in-the-woods.html",
             "date": " • Dec 18, 2018"
         }
         
@@ -222,21 +222,21 @@
   
     
         ,"post20": {
-            "title": "Lighter",
-            "content": "You have a lighter and two lengths of rope that burn for exactly 1 hour each. They do not burn consistently so you cannot, for example, cut one in half and burn that. How can you use these two ropes to measure exactly 45 minutes ? . Hover to show the answer. . Light one rope from both ends and one rope from one end. . After 30 minutes, the first rope will be finished burning. . You have 30 minutes left of burning on the second rope. Light the second end of that rope so that it will burn for 15 minutes instead of 30 minutes. . The total burning time will be 45 minutes. .",
-            "url": "https://rcambier.github.io/blog/blog/2018/12/10/rope.html",
-            "relUrl": "/blog/2018/12/10/rope.html",
-            "date": " • Dec 10, 2018"
+            "title": "Evil professor",
+            "content": "The evil professor says to the students: you are going to have an exam next week. I’m not telling you which day, but I am telling you that it will be unexpected (i.e., the day of the exam you won’t be sure whether the exam is that day or not). I’m assuming that the week starts on Monday and ends on Friday. . So this is what the students think: . Okay, it can’t be on Friday, because if Friday comes and we haven’t had the test yet, then in the morning we’ll surely know it’s that day. So it will be a day from Monday to Thursday. After pondering a bit, they realise that it can’t be Thursday either, for the same reason: If Thursday comes and they haven’t had the exam they’ll think “we know it’s not Friday, therefore it has to be today”. So Thursday wouldn’t be a surprise either. Similarly (by induction), all days are eliminated ! . Then they are happy and think the evil professor made a promise he couldn’t hold, and don’t prepare for the test. However, the next week, on Wednesday, they have the exam. And all are surprised. . Where is the flaw in the logic ? . Hover to show the answer. . There is no answer to this… I will try to explain later. .",
+            "url": "https://rcambier.github.io/blog/riddle/2018/12/18/evil-professor.html",
+            "relUrl": "/riddle/2018/12/18/evil-professor.html",
+            "date": " • Dec 18, 2018"
         }
         
     
   
     
         ,"post21": {
-            "title": "Prisoners and trees",
-            "content": "Here is a logic puzzle that depends on the game theory concept of common knowledge. . Can you figure it out? Alice and Bob are taken prisoners by an evil logician. They are given one chance to be set free. Alice and Bob are placed in cells that have a view of a courtyard with trees. There are 20 trees in all, of which Alice sees 12 and Bob sees 8. Neither prisoner knows how many trees the other sees. But each prisoner is told the trees are partitioned between them: together they see all the trees, but individually no tree is seen by both of them. . . They have to figure out the total number of trees, but they are not allowed to communicate with each other. Each day the logician visits Alice in her cell and asks, “Are there 18 or 20 trees in total?” Alice has two choices: she can guess or pass. If Alice passes, then the logician visits Bob in his cell and asks the same question. Bob also can guess or pass. If Bob passes, then the logician retires for the night asks and repeats asking the questions the next day. Both prisoners know the procedure of how the logician is asking questions. There are consequences to guessing. If either person guesses incorrectly, then they are both trapped forever. If either person guesses correctly, however, then they are both set free immediately. Obviously they could guess and have a 50% chance. But can they do better? Is there a way they can escape with certainty? . Hover to show the answer. . This is a complex one. Answer is coming. .",
-            "url": "https://rcambier.github.io/blog/blog/2018/12/10/prisoners-trees.html",
-            "relUrl": "/blog/2018/12/10/prisoners-trees.html",
+            "title": "Lighter",
+            "content": "You have a lighter and two lengths of rope that burn for exactly 1 hour each. They do not burn consistently so you cannot, for example, cut one in half and burn that. How can you use these two ropes to measure exactly 45 minutes ? . Hover to show the answer. . Light one rope from both ends and one rope from one end. . After 30 minutes, the first rope will be finished burning. . You have 30 minutes left of burning on the second rope. Light the second end of that rope so that it will burn for 15 minutes instead of 30 minutes. . The total burning time will be 45 minutes. .",
+            "url": "https://rcambier.github.io/blog/riddle/2018/12/10/rope.html",
+            "relUrl": "/riddle/2018/12/10/rope.html",
             "date": " • Dec 10, 2018"
         }
         
@@ -244,10 +244,10 @@
   
     
         ,"post22": {
-            "title": "Peeking",
-            "content": "Jack is looking at Anne, but Anne is looking at George. Jack is married, but George is not. Is a married person looking at an unmarried person? . A: Yes | B: No | C: Cannot be determined | . Hover to show the answer. . Yes. . There are only two possible cases: either Anne is married, or she is not. . If she is married, then a married person (Jack) is looking at an unmarried person (Anne). If she is not married, then a married person (Anne) is looking at an unmarried person (George). .",
-            "url": "https://rcambier.github.io/blog/blog/2018/12/10/peeking.html",
-            "relUrl": "/blog/2018/12/10/peeking.html",
+            "title": "Prisoners and trees",
+            "content": "Here is a logic puzzle that depends on the game theory concept of common knowledge. . Can you figure it out? Alice and Bob are taken prisoners by an evil logician. They are given one chance to be set free. Alice and Bob are placed in cells that have a view of a courtyard with trees. There are 20 trees in all, of which Alice sees 12 and Bob sees 8. Neither prisoner knows how many trees the other sees. But each prisoner is told the trees are partitioned between them: together they see all the trees, but individually no tree is seen by both of them. . . They have to figure out the total number of trees, but they are not allowed to communicate with each other. Each day the logician visits Alice in her cell and asks, “Are there 18 or 20 trees in total?” Alice has two choices: she can guess or pass. If Alice passes, then the logician visits Bob in his cell and asks the same question. Bob also can guess or pass. If Bob passes, then the logician retires for the night asks and repeats asking the questions the next day. Both prisoners know the procedure of how the logician is asking questions. There are consequences to guessing. If either person guesses incorrectly, then they are both trapped forever. If either person guesses correctly, however, then they are both set free immediately. Obviously they could guess and have a 50% chance. But can they do better? Is there a way they can escape with certainty? . Hover to show the answer. . This is a complex one. Answer is coming. .",
+            "url": "https://rcambier.github.io/blog/riddle/2018/12/10/prisoners-trees.html",
+            "relUrl": "/riddle/2018/12/10/prisoners-trees.html",
             "date": " • Dec 10, 2018"
         }
         
@@ -255,10 +255,10 @@
   
     
         ,"post23": {
-            "title": "Exception",
-            "content": "Find the exception . . Hover to show the answer. . B is the exception. . It is the only one that is only one difference away from every other one. . A and B have radius in difference | A and C have color in difference | A and D have snowfloake in difference | A and E have shape in diffrence | A and F have border in difference. | . If you select another one, like D, it can have 2 differences to some. .",
-            "url": "https://rcambier.github.io/blog/blog/2018/12/10/one-out.html",
-            "relUrl": "/blog/2018/12/10/one-out.html",
+            "title": "Peeking",
+            "content": "Jack is looking at Anne, but Anne is looking at George. Jack is married, but George is not. Is a married person looking at an unmarried person? . A: Yes | B: No | C: Cannot be determined | . Hover to show the answer. . Yes. . There are only two possible cases: either Anne is married, or she is not. . If she is married, then a married person (Jack) is looking at an unmarried person (Anne). If she is not married, then a married person (Anne) is looking at an unmarried person (George). .",
+            "url": "https://rcambier.github.io/blog/riddle/2018/12/10/peeking.html",
+            "relUrl": "/riddle/2018/12/10/peeking.html",
             "date": " • Dec 10, 2018"
         }
         
@@ -266,10 +266,10 @@
   
     
         ,"post24": {
-            "title": "Magic logic",
-            "content": "At a party last night, my friends Alice and Bob did a magic trick. Any ideas how it worked? . Alice shuffled a pack of cards, and asked me to take five. I looked at them. She put the rest of the pack down on the table. Alice asked for my cards. She had a look at them. She gave four of them to Bob (he was across the table), and the fifth back to me. Bob looked at the four cards for a while. Then Bob looked at me, and named the card I was holding. He was right. I’m quite sure he couldn’t have seen it (we weren’t sitting by a mirror). . They did the trick again later to someone else. I watched for funny business. Alice didn’t say anything to Bob, so I don’t think they have a code. Also Alice is famously clumsy, so I doubt it was sleight of hand. . . Hover to show the answer. . When Alice had the five cards in hands, she needs to find a way to select one, and communicate which one she selected to Bob by showing Bob the four other cards. . Here is the way to do that: . In the five cards, there are always two of the same suite. | Alice is going to chose one of those two and tell which one to Bob using the 3 remaining cards. | The thing to notice is: when having two cards of the same suite, they are alway 6 cards appart in some direction. For example 7-heart and 9-heart are 2 apart. But queen-spade and 2-spade are 3 apart: queen-king-ace-2. | Now since there are 12 different cards per suite, two cards are always going to be maximum 6 steps away from each other. | So the way to do it is: from the two cards of the same suite, pick the one that allows reaching the other by adding up to 6 steps. So with 7-heart and 9-heart, pick 7-heart. With 2-spade and queen-spade, pick queen-spade. | Let’s continue in the case where Alice picked the queen-spade. | Alice gives back to Bob 3 cards + the queen-spade on top. And Bob has to guess 2-spade. | The goal is now to make the number ‘3’ with the 3 remaining random cards. That way Bob knows he has to add ‘3’ to the queen-spade, which will give him the 2-spade. | This is easily doable. With 3 cards you can make 6 combinations. Just assign each of them to a number. | Here is a way to do this: The 3 cards can always be ordered by value. So you can have card-1, card-2 and card-3. The six orders could be: [1-2-3, 1-3-2, 2-1-3, 2-3-1, 3-1-2, 3-2-1]. Here we would select the order ‘2-1-3’ to represent the number 3. | So Bob sees the queen-spade, and then 3 cards that represent the number ‘3’. He can now guess the 2-spade. | .",
-            "url": "https://rcambier.github.io/blog/blog/2018/12/10/magic-loop.html",
-            "relUrl": "/blog/2018/12/10/magic-loop.html",
+            "title": "Exception",
+            "content": "Find the exception . . Hover to show the answer. . B is the exception. . It is the only one that is only one difference away from every other one. . A and B have radius in difference | A and C have color in difference | A and D have snowfloake in difference | A and E have shape in diffrence | A and F have border in difference. | . If you select another one, like D, it can have 2 differences to some. .",
+            "url": "https://rcambier.github.io/blog/riddle/2018/12/10/one-out.html",
+            "relUrl": "/riddle/2018/12/10/one-out.html",
             "date": " • Dec 10, 2018"
         }
         
@@ -277,10 +277,10 @@
   
     
         ,"post25": {
-            "title": "Gender",
-            "content": "A lady has two children. One is a boy. What are the chances of the other child also being a boy? . . Hover to show the answer. . This one is more complicated that I previously thought… .",
-            "url": "https://rcambier.github.io/blog/blog/2018/12/10/gender.html",
-            "relUrl": "/blog/2018/12/10/gender.html",
+            "title": "Magic logic",
+            "content": "At a party last night, my friends Alice and Bob did a magic trick. Any ideas how it worked? . Alice shuffled a pack of cards, and asked me to take five. I looked at them. She put the rest of the pack down on the table. Alice asked for my cards. She had a look at them. She gave four of them to Bob (he was across the table), and the fifth back to me. Bob looked at the four cards for a while. Then Bob looked at me, and named the card I was holding. He was right. I’m quite sure he couldn’t have seen it (we weren’t sitting by a mirror). . They did the trick again later to someone else. I watched for funny business. Alice didn’t say anything to Bob, so I don’t think they have a code. Also Alice is famously clumsy, so I doubt it was sleight of hand. . . Hover to show the answer. . When Alice had the five cards in hands, she needs to find a way to select one, and communicate which one she selected to Bob by showing Bob the four other cards. . Here is the way to do that: . In the five cards, there are always two of the same suite. | Alice is going to chose one of those two and tell which one to Bob using the 3 remaining cards. | The thing to notice is: when having two cards of the same suite, they are alway 6 cards appart in some direction. For example 7-heart and 9-heart are 2 apart. But queen-spade and 2-spade are 3 apart: queen-king-ace-2. | Now since there are 12 different cards per suite, two cards are always going to be maximum 6 steps away from each other. | So the way to do it is: from the two cards of the same suite, pick the one that allows reaching the other by adding up to 6 steps. So with 7-heart and 9-heart, pick 7-heart. With 2-spade and queen-spade, pick queen-spade. | Let’s continue in the case where Alice picked the queen-spade. | Alice gives back to Bob 3 cards + the queen-spade on top. And Bob has to guess 2-spade. | The goal is now to make the number ‘3’ with the 3 remaining random cards. That way Bob knows he has to add ‘3’ to the queen-spade, which will give him the 2-spade. | This is easily doable. With 3 cards you can make 6 combinations. Just assign each of them to a number. | Here is a way to do this: The 3 cards can always be ordered by value. So you can have card-1, card-2 and card-3. The six orders could be: [1-2-3, 1-3-2, 2-1-3, 2-3-1, 3-1-2, 3-2-1]. Here we would select the order ‘2-1-3’ to represent the number 3. | So Bob sees the queen-spade, and then 3 cards that represent the number ‘3’. He can now guess the 2-spade. | .",
+            "url": "https://rcambier.github.io/blog/riddle/2018/12/10/magic-loop.html",
+            "relUrl": "/riddle/2018/12/10/magic-loop.html",
             "date": " • Dec 10, 2018"
         }
         
@@ -288,10 +288,21 @@
   
     
         ,"post26": {
+            "title": "Gender",
+            "content": "A lady has two children. One is a boy. What are the chances of the other child also being a boy? . . Hover to show the answer. . This one is more complicated that I previously thought… .",
+            "url": "https://rcambier.github.io/blog/riddle/2018/12/10/gender.html",
+            "relUrl": "/riddle/2018/12/10/gender.html",
+            "date": " • Dec 10, 2018"
+        }
+        
+    
+  
+    
+        ,"post27": {
             "title": "Blue eyes",
             "content": "A group of people with assorted eye colors live on an island. They are all perfect logicians – if a conclusion can be logically deduced, they will do it instantly. No one knows the color of their eyes. Every night at midnight, a ferry stops at the island. Any islanders who have figured out the color of their own eyes then leave the island, and the rest stay. Everyone can see everyone else at all times and keeps a count of the number of people they see with each eye color (excluding themselves), but they cannot otherwise communicate. Everyone on the island knows all the rules in this paragraph. . On this island there are 100 blue-eyed people, 100 brown-eyed people, and the Guru (she happens to have green eyes). So any given blue-eyed person can see 100 people with brown eyes and 99 people with blue eyes (and one with green), but that does not tell him his own eye color; as far as he knows the totals could be 101 brown and 99 blue. Or 100 brown, 99 blue, and he could have red eyes. . The Guru is allowed to speak once (let’s say at noon), on one day in all their endless years on the island. Standing before the islanders, she says the following: . “I can see someone who has blue eyes.” . Who leaves the island, and on what night? . There are no mirrors or reflecting surfaces, nothing dumb. It is not a trick question, and the answer is logical. It doesn’t depend on tricky wording or anyone lying or guessing, and it doesn’t involve people doing something silly like creating a sign language or doing genetics. The Guru is not making eye contact with anyone in particular; she’s simply saying “I count at least one blue-eyed person on this island who isn’t me.” . And lastly, the answer is not “no one leaves.” . Hover to show the answer. . All the 100 blue-eye people leave the island on the 100th night. . The following chart explains why using 4 people. The reflexion is the same, simply longer, for 100 persons. Click on the chart to open it in a new window. . The information &quot;There is at least one blue-eyed person&quot; is needed !The information &quot;There is at least one blue-eyed person&quot; is needed !If I am blue-eyed, he looks at 3 blue-eyed personsIf I am blue-eyed, he looks at 3 blue-eyed personsIf I am brown eyed, he looks at only 2 other blue-eyedIf I am brown eyed, he looks at only 2 other blue-eyedWhen I look at 3 blue-eyed person, I wonder if I am myself blue eyed.When I look at 3 blue-eyed person, I wonder if I am myself blue eyed.I consider myself blue-eyedI consider myself blue-eyedI consider myself brown-eyedI consider myself brown-eyedMEMEI wonder if this guy thinks he is blue eyed or not (I wonder the same for the 2 other, the reflexion is the same)[Not supported by viewer]MEMEAABBCCHe considers himself blue-eyedHe considers himself blue-eyedHe considers himself brown-eyedHe considers himself brown-eyedMEMEAABBCCIf A considers himself blue-eyed, there are 3 blue-eyed persons.If A considers himself blue-eyed, there are 3 blue-eyed persons.MEMEA[Not supported by viewer]BBCCIf A doesn&#39;t consider himself blue-eyed, he will try to understand what the 2 last one are going to do [Not supported by viewer]This last guy could think he is brown-eyedThis last guy could think he is brown-eyedThis last guy could think he is blue-eyedThis last guy could think he is blue-eyedMEMEAABBCCThen there are 2 blue-eyed persons Then there are 2 blue-eyed persons MEMEAABBCCThen he looks at a blue-eye guy that is aloneThen he looks at a blue-eye guy that is aloneMEMEAABBCCIf someone comes and say &quot;There is at least one blue-eyed person&quot;, than person B will see 3 brown-eyed and leave ![Not supported by viewer]If someone comes and say &quot;There is at least one blue-eyed person&quot;, Than, no one will dare to leave the first day ![Not supported by viewer]After one day, we know which one of those 2 supposed situations is the true one.Either B left, and there was only 1 blue-eyed person.Or B stays, and C will understand that he is blue after one day. [Not supported by viewer]However, if after two days, B and C are not leaving...A will understand that his supposition that he is brown might be false.The third day, A, B and C are going to leave[Not supported by viewer]If the 3rd day no one leaves.. I should understand that the supposition that I am brown can not hold. Therefore, we are all blue-eyed.The 4th day, we all leave.[Not supported by viewer]The problem is the same with 4 persons and with 100 persons.This is the concept of common-knowledge. At first, I might think that it is common knowledge that there are at least 3 blue-eyed person. And I might think that the sentence &quot;there is at least one blue-eyed person&quot; is useless, since everyone sees at least two blue eyed person. But we don&#39;t all have the same knowledge. If I am browm eyed, other people might only see 2 blue-eyed persons. Those persons will think that other could only see 1 blue-eyed person. And those persons that see only one blue-eyed person could think that someone sees no blue-eyed persons. This means that, until someone says &quot;I see at least one blue eyed person&quot; and 4 day passes, we don&#39;t all have the same knowledge about the world.The time it takes to reach common knowledge is the time the persons have to wait before leaving. [Not supported by viewer]Yes this is comic sans ms :)Yes this is comic sans ms :)&lt;br&gt;",
-            "url": "https://rcambier.github.io/blog/blog/2018/12/10/blue-eyes.html",
-            "relUrl": "/blog/2018/12/10/blue-eyes.html",
+            "url": "https://rcambier.github.io/blog/riddle/2018/12/10/blue-eyes.html",
+            "relUrl": "/riddle/2018/12/10/blue-eyes.html",
             "date": " • Dec 10, 2018"
         }
         
@@ -304,7 +315,7 @@
   
       ,"page1": {
           "title": "Ai from scratch",
-          "content": "Riddles ! . I haven&#39;t invented any of those. I just found them online and thought they were good ones. . The riddles are ranked by some measure of difficulty. . Cats and mouses (difficulty 1) If 3 cats take 3 minutes to catch 3 mouses, ... &lt;/div&gt; Peeking (difficulty 1) Jack is looking at Anne, but Anne is looking... &lt;/div&gt; Potatoes (difficulty 1.5) A farmer has 100kg of potatoes. At the start... &lt;/div&gt; Simple Maths (difficulty 1.5) How do you make 26 by using 5, 5, 5 and 1. Y... &lt;/div&gt; Surprise birthday (difficulty 2) Albert and Bernard just become friends with ... &lt;/div&gt; Reversed number (difficulty 2) Can you find a 4 digits number that gets rev... &lt;/div&gt; The rope triangle (difficulty 2) You cut a rope in a random place. Then again... &lt;/div&gt; The blind pill (difficulty 2) You are blind. You have 2 blue pills and 2 ... &lt;/div&gt; Exception (difficulty 2) Find the exception . Gold coins (difficulty 2) There is a stack of 100 coins. Each coin has... &lt;/div&gt; Lighter (difficulty 2) You have a lighter and two lengths of rope t... &lt;/div&gt; Running in circle (difficulty 2) If I can make it around a running track once... &lt;/div&gt; Lost father (difficulty 2.5) Question: A mother is 21 years older than he... &lt;/div&gt; King&#39;s poison (difficulty 2.5) In a far away land, it was known that if you... &lt;/div&gt; 4 Pieces (difficulty 2.5) There are 4 coins on a quadrant. They are no... &lt;/div&gt; Prisoner&#39;s switch (difficulty 3) The warden meets with 23 new prisoners when ... &lt;/div&gt; Magic logic (difficulty 3) At a party last night, my friends Alice and ... &lt;/div&gt; Lost in the woods (difficulty 3.5) You are in a square forest of side 100km. Yo... &lt;/div&gt; Prisoners and trees (difficulty 4) Here is a logic puzzle that depends on the g... &lt;/div&gt; Blue eyes (difficulty 5) A group of people with assorted eye colors l... &lt;/div&gt; Broken plane (difficulty 10) Imagine a 747 is sitting on a conveyor belt,... &lt;/div&gt; The newcomb poison (difficulty 99) You are put into a room with a suitcase and ... &lt;/div&gt; Evil professor (difficulty 99) The evil professor says to the students: you... &lt;/div&gt; Gender (difficulty 99) A lady has two children. One is a boy. What ... &lt;/div&gt; Three‘s a Crowd (difficulty 99) From: http://www.twinbear.com/riddles.html . &lt;/div&gt; . . . . .",
+          "content": "Ai from scratch. . ai_1 (difficulty ) If 3 cats take 3 minutes to catch 3 mouses, ... &lt;/div&gt; &lt;/div&gt; .",
           "url": "https://rcambier.github.io/blog/ai-from-scratch/",
           "relUrl": "/ai-from-scratch/",
           "date": ""
