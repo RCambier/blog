@@ -12,8 +12,8 @@ search_exclude: false
 <div class='listing col6 pad4h margin3'>
     {% assign posts = site.categories.ai %}
     {% for item in  posts %}
-    <a class='item' href='{{site.baseurl}}{{item.url}}'>{{item.title}} (difficulty {{item.difficulty}})</a> 
-    <div> {{ item.excerpt | truncate: 50 }} </div>
+    <a class='item' href='{{site.baseurl}}{{item.url}}'>{{item.title}}</a> 
+    <div> {{ post.description }} </div>
     <br>
     {% endfor %}
 </div>
