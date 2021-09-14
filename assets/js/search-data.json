@@ -302,20 +302,9 @@
   
 
   
-      ,"page1": {
-          "title": "About Me",
-          "content": "This website is powered by fastpages 1. . a blogging platform that natively supports Jupyter notebooks in addition to other formats. &#8617; . |",
-          "url": "https://rcambier.github.io/blog/about/",
-          "relUrl": "/about/",
-          "date": ""
-      }
-      
-  
 
   
-
-  
-      ,"page3": {
+      ,"page2": {
           "title": "Riddles",
           "content": "Riddles ! . I haven&#39;t invented any of those. I just found them online and thought they were good ones. . The riddles are ranked by some measure of difficulty. . Cats and mouses (difficulty 1) If 3 cats take 3 minutes to catch 3 mouses, ... &lt;/div&gt; Peeking (difficulty 1) Jack is looking at Anne, but Anne is looking... &lt;/div&gt; Potatoes (difficulty 1.5) A farmer has 100kg of potatoes. At the start... &lt;/div&gt; Simple Maths (difficulty 1.5) How do you make 26 by using 5, 5, 5 and 1. Y... &lt;/div&gt; Surprise birthday (difficulty 2) Albert and Bernard just become friends with ... &lt;/div&gt; Reversed number (difficulty 2) Can you find a 4 digits number that gets rev... &lt;/div&gt; The rope triangle (difficulty 2) You cut a rope in a random place. Then again... &lt;/div&gt; The blind pill (difficulty 2) You are blind. You have 2 blue pills and 2 ... &lt;/div&gt; Exception (difficulty 2) Find the exception . Gold coins (difficulty 2) There is a stack of 100 coins. Each coin has... &lt;/div&gt; Lighter (difficulty 2) You have a lighter and two lengths of rope t... &lt;/div&gt; Running in circle (difficulty 2) If I can make it around a running track once... &lt;/div&gt; Lost father (difficulty 2.5) Question: A mother is 21 years older than he... &lt;/div&gt; King&#39;s poison (difficulty 2.5) In a far away land, it was known that if you... &lt;/div&gt; 4 Pieces (difficulty 2.5) There are 4 coins on a quadrant. They are no... &lt;/div&gt; Prisoner&#39;s switch (difficulty 3) The warden meets with 23 new prisoners when ... &lt;/div&gt; Magic logic (difficulty 3) At a party last night, my friends Alice and ... &lt;/div&gt; Lost in the woods (difficulty 3.5) You are in a square forest of side 100km. Yo... &lt;/div&gt; Prisoners and trees (difficulty 4) Here is a logic puzzle that depends on the g... &lt;/div&gt; Blue eyes (difficulty 5) A group of people with assorted eye colors l... &lt;/div&gt; Broken plane (difficulty 10) Imagine a 747 is sitting on a conveyor belt,... &lt;/div&gt; The newcomb poison (difficulty 99) You are put into a room with a suitcase and ... &lt;/div&gt; Evil professor (difficulty 99) The evil professor says to the students: you... &lt;/div&gt; Gender (difficulty 99) A lady has two children. One is a boy. What ... &lt;/div&gt; Three‘s a Crowd (difficulty 99) From: http://www.twinbear.com/riddles.html . &lt;/div&gt; . . . . .",
           "url": "https://rcambier.github.io/blog/riddles/",
@@ -343,7 +332,7 @@
   
 
   
-      ,"page10": {
+      ,"page9": {
           "title": "",
           "content": "Sitemap: {{ “sitemap.xml” | absolute_url }} | .",
           "url": "https://rcambier.github.io/blog/robots.txt",
