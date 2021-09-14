@@ -8,15 +8,15 @@
 <meta name="generator" content="Jekyll v4.1.1" />
 <meta property="og:title" content="Linear regression &amp; Logistic regression" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Linear regression and logistic regression from scratch in Python" />
-<meta property="og:description" content="Linear regression and logistic regression from scratch in Python" />
+<meta name="description" content="Linear regression and logistic regression with r2 score from scratch in Python" />
+<meta property="og:description" content="Linear regression and logistic regression with r2 score from scratch in Python" />
 <link rel="canonical" href="https://rcambier.github.io/blog/ai/2021/09/14/linear-regression.html" />
 <meta property="og:url" content="https://rcambier.github.io/blog/ai/2021/09/14/linear-regression.html" />
 <meta property="og:site_name" content="R Cambier" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2021-09-14T00:00:00-05:00" />
 <script type="application/ld+json">
-{"url":"https://rcambier.github.io/blog/ai/2021/09/14/linear-regression.html","@type":"BlogPosting","headline":"Linear regression &amp; Logistic regression","dateModified":"2021-09-14T00:00:00-05:00","datePublished":"2021-09-14T00:00:00-05:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://rcambier.github.io/blog/ai/2021/09/14/linear-regression.html"},"description":"Linear regression and logistic regression from scratch in Python","@context":"https://schema.org"}</script>
+{"url":"https://rcambier.github.io/blog/ai/2021/09/14/linear-regression.html","@type":"BlogPosting","headline":"Linear regression &amp; Logistic regression","dateModified":"2021-09-14T00:00:00-05:00","datePublished":"2021-09-14T00:00:00-05:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://rcambier.github.io/blog/ai/2021/09/14/linear-regression.html"},"description":"Linear regression and logistic regression with r2 score from scratch in Python","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/blog/assets/css/style.css"><link rel="shortcut icon" type="image/x-icon" href="/blog/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
@@ -71,7 +71,7 @@ window.onload = wrap_img;
         <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
-    <h1 class="post-title p-name" itemprop="name headline">Linear regression &amp; Logistic regression</h1><p class="page-description">Linear regression and logistic regression from scratch in Python</p>
+    <h1 class="post-title p-name" itemprop="name headline">Linear regression &amp; Logistic regression</h1><p class="page-description">Linear regression and logistic regression with r2 score from scratch in Python</p>
 
     
       
@@ -192,6 +192,44 @@ window.onload = wrap_img;
 Manual score:  0.5713482748283873
 </pre>
 </div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">r2_score</span>
+
+<span class="n">RSS</span> <span class="o">=</span> <span class="p">(((</span><span class="n">X_with_intercept</span> <span class="o">@</span> <span class="n">B</span><span class="p">)</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span> <span class="o">-</span> <span class="n">y</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span> <span class="c1"># Squared distance from our new regression line</span>
+<span class="n">TSS</span> <span class="o">=</span> <span class="p">((</span><span class="n">y</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span> <span class="o">-</span> <span class="n">y</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>                           <span class="c1"># Squared distance from the mean</span>
+<span class="n">r2</span> <span class="o">=</span> <span class="mi">1</span> <span class="o">-</span> <span class="n">RSS</span> <span class="o">/</span> <span class="n">TSS</span>                                        <span class="c1"># How much distance did we gained ? Did we reduce the errors ? Are we closer to the actual point values ?</span>
+<span class="n">r2</span><span class="p">,</span> <span class="n">r2_score</span><span class="p">(</span><span class="n">y</span><span class="p">,</span> <span class="p">(</span><span class="n">X_with_intercept</span> <span class="o">@</span> <span class="n">B</span><span class="p">)</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">))</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>(0.5713482748283873, 0.5713482748283873)</pre>
+</div>
+
 </div>
 
 </div>
