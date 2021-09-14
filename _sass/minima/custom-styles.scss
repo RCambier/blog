@@ -9,3 +9,13 @@
 
 // If you want to turn off dark background for syntax highlighting, comment or delete the below line.
 @import "minima/fastpages-dracula-highlight"; 
+
+
+.answer {visibility: hidden}
+.answer-title {margin-top: 40px; color: lightgrey}
+.answer-wrapper{margin:10px;
+                padding:10px;
+                background-color: #eaeaea
+   }
+.answer-wrapper:hover .answer {visibility: visible}
+.answer-wrapper:active .answer {visibility: visible}
