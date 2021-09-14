@@ -8,7 +8,7 @@ difficulty: 1
 If 3 cats take 3 minutes to catch 3 mouses, how many cats are needed to catch 100 mouses in 100 minutes ?
 
 
-![gender](/img/cats.jpg){:height="300px"}
+![gender]({{ site.baseurl }}/img/cats.jpg){:height="300px"}
 
 <div markdown="1" class='answer-title' style="color: lightgrey">_Hover to show the answer._
 </div>

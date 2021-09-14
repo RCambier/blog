@@ -14,7 +14,7 @@ Alice shuffled a pack of cards, and asked me to take five. I looked at them. She
 
 They did the trick again later to someone else. I watched for funny business. Alice didn't say anything to Bob, so I don't think they have a code. Also Alice is famously clumsy, so I doubt it was sleight of hand.
 
-![gender](/img/cards.jpg){:height="300px"}
+![gender]({{ site.baseurl }}/img/cards.jpg){:height="300px"}
 
 
 <div markdown="1" class='answer-title' style="color: lightgrey">_Hover to show the answer._
