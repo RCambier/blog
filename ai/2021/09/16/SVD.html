@@ -145,13 +145,17 @@ window.onload = wrap_img;
               <span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">5</span><span class="p">]</span>
 <span class="p">])</span>
 
-<span class="c1"># U_eigen_values, U = np.linalg.eig(A @ A.T) this is similar but leads to incorrect directions for the eigenvectors</span>
-
-<span class="n">V_eigen_values</span><span class="p">,</span> <span class="n">V_unordered</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">eig</span><span class="p">(</span><span class="n">A</span><span class="o">.</span><span class="n">T</span> <span class="o">@</span> <span class="n">A</span><span class="p">)</span>
-<span class="n">idx_V</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">argsort</span><span class="p">(</span><span class="n">V_eigen_values</span><span class="p">)[::</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
-
+<span class="c1"># Get the singular vectors of V from the eigenvectors of the covariance matrix</span>
+<span class="n">V_eigen_values</span><span class="p">,</span> <span class="n">V_unordered</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">eig</span><span class="p">(</span><span class="n">A</span><span class="o">.</span><span class="n">T</span> <span class="o">@</span> <span class="n">A</span><span class="p">)</span> 
+<span class="c1"># We need to sort them by the magnitude of the eigenvalues</span>
+<span class="n">idx_V</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">argsort</span><span class="p">(</span><span class="n">V_eigen_values</span><span class="p">)[::</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> 
 <span class="n">V</span> <span class="o">=</span> <span class="n">V_unordered</span><span class="p">[:,</span><span class="n">idx_V</span><span class="p">]</span>
+
+<span class="c1"># Compute the singular vectors of U. We could also use the eingenvectors, but we need to base it on V to have the correct vector directions.</span>
+<span class="c1"># U_eigen_values, U = np.linalg.eig(A @ A.T) this is similar but leads to incorrect directions for the eigenvectors</span>
 <span class="n">U</span> <span class="o">=</span> <span class="n">A</span> <span class="o">@</span> <span class="n">V</span> <span class="o">/</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">norm</span><span class="p">(</span><span class="n">A</span> <span class="o">@</span> <span class="n">V</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+
+<span class="c1"># The matrix D is the square root of the eigenvalues.</span>
 <span class="n">D</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">around</span><span class="p">(</span><span class="n">V_eigen_values</span><span class="p">[</span><span class="n">idx_V</span><span class="p">],</span> <span class="n">decimals</span><span class="o">=</span><span class="mi">10</span><span class="p">))</span>
 </pre></div>
 
