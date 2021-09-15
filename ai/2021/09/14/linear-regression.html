@@ -117,7 +117,7 @@ window.onload = wrap_img;
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">scipy</span> <span class="k">as</span> <span class="nn">sp</span> 
 <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span> 
 <span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
-<span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">r2_score</span><span class="p">,</span> <span class="n">precision_score</span><span class="p">,</span> <span class="n">recall_score</span>
+<span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">r2_score</span><span class="p">,</span> <span class="n">precision_score</span><span class="p">,</span> <span class="n">recall_score</span><span class="p">,</span> <span class="n">log_loss</span>
 <span class="kn">from</span> <span class="nn">sklearn.linear_model</span> <span class="kn">import</span> <span class="n">LinearRegression</span><span class="p">,</span> <span class="n">Ridge</span>
 <span class="kn">import</span> <span class="nn">sklearn</span>
 </pre></div>
@@ -431,6 +431,14 @@ Sklearn score:  0.5710213053584055
 </div>
 </div>
 </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>For the logistic regression, we transform the X values in the same way but we add a sigmoid transform at the end in order to map to values between 0 and 1.</p>
+<p>We can not use the normal form anymore for computing the weights. We have to resort to other techniques like gradient descent.</p>
+
+</div>
+</div>
+</div>
     
     
 <div class="cell border-box-sizing code_cell rendered">
@@ -442,22 +450,24 @@ Sklearn score:  0.5710213053584055
   <span class="k">return</span>  <span class="mi">1</span> <span class="o">/</span> <span class="p">(</span><span class="mi">1</span> <span class="o">+</span> <span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="o">-</span><span class="n">x</span><span class="p">))</span> 
 
 <span class="k">def</span> <span class="nf">log_likelihood</span><span class="p">(</span><span class="n">y_hat</span><span class="p">,</span> <span class="n">y_true</span><span class="p">):</span>
-  <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span> <span class="n">y_true</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="n">y_hat</span><span class="p">)</span> <span class="o">+</span> <span class="p">(</span><span class="mi">1</span><span class="o">-</span><span class="n">y_true</span><span class="p">)</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="mi">1</span><span class="o">-</span><span class="n">y_hat</span><span class="p">)</span> <span class="p">)</span>
+  <span class="c1"># Being far away from the correct class is penalized heavily. </span>
+  <span class="k">return</span> <span class="o">-</span> <span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span> <span class="n">y_true</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="n">y_hat</span><span class="p">)</span> <span class="o">+</span> <span class="p">(</span><span class="mi">1</span><span class="o">-</span><span class="n">y_true</span><span class="p">)</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="mi">1</span><span class="o">-</span><span class="n">y_hat</span><span class="p">)</span> <span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">gradient_sigmoid</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+  <span class="n">sigmoid</span><span class="p">(</span><span class="n">X</span><span class="p">)</span> <span class="o">*</span> <span class="p">(</span><span class="mi">1</span> <span class="o">-</span> <span class="n">sigmoid</span><span class="p">(</span><span class="n">X</span><span class="p">))</span>
+
 
 <span class="k">def</span> <span class="nf">gradients</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">y_hat</span><span class="p">):</span>
-    
-    <span class="c1"># X --&gt; Input.</span>
-    <span class="c1"># y --&gt; true/target value.</span>
-    <span class="c1"># y_hat --&gt; hypothesis/predictions.</span>
-    <span class="c1"># w --&gt; weights (parameter).</span>
-    <span class="c1"># b --&gt; bias (parameter).</span>
-    
-    <span class="c1"># m-&gt; number of training examples.</span>
-    <span class="n">m</span> <span class="o">=</span> <span class="n">X</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
-    
-    <span class="c1"># Gradient of loss w.r.t weights.</span>
-    <span class="n">dw</span> <span class="o">=</span> <span class="p">(</span><span class="mi">1</span><span class="o">/</span><span class="n">m</span><span class="p">)</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">X</span><span class="o">.</span><span class="n">T</span><span class="p">,</span> <span class="p">(</span><span class="n">y_hat</span> <span class="o">-</span> <span class="n">y</span><span class="p">))</span>
-    
+    <span class="c1"># Loss = y * log(h) + (1 - y) * log(1-h)</span>
+    <span class="c1"># where h = sigmoid(z)</span>
+    <span class="c1"># and z = Xt @ B</span>
+
+    <span class="c1"># deriv_loss_to_h = y / h - (1-y) / (1-h) = (y - h) / (h * (1 - h))</span>
+    <span class="c1"># deriv_h_to_z = sigmoid(h) * (1 - sigmoid(h))</span>
+    <span class="c1"># deriv_z_to_b = Xt</span>
+    <span class="c1"># Though chain rule, final derivative </span>
+    <span class="c1"># final_derivative = deriv_loss_to_h * deriv_h_to_z * deriv_z_to_b = x * (y - h) = x * (y - y_hat) </span>
+    <span class="n">dw</span> <span class="o">=</span> <span class="p">(</span><span class="mi">1</span><span class="o">/</span><span class="nb">len</span><span class="p">(</span><span class="n">X</span><span class="p">))</span> <span class="o">*</span> <span class="p">(</span><span class="n">X</span><span class="o">.</span><span class="n">T</span> <span class="o">@</span> <span class="p">(</span><span class="n">y_hat</span> <span class="o">-</span> <span class="n">y</span><span class="p">))</span>
     <span class="k">return</span> <span class="n">dw</span>
 </pre></div>
 
@@ -485,9 +495,9 @@ Sklearn score:  0.5710213053584055
 
 <span class="n">B</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">normal</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mf">0.1</span> <span class="p">,(</span><span class="mi">7</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span>
 
-<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">20_000</span><span class="p">):</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">50_000</span><span class="p">):</span>
   <span class="n">y_hat</span> <span class="o">=</span> <span class="n">sigmoid</span><span class="p">(</span><span class="n">X_with_intercept</span> <span class="o">@</span> <span class="n">B</span><span class="p">)</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
-  <span class="k">if</span> <span class="n">i</span> <span class="o">%</span> <span class="mi">1000</span> <span class="o">==</span> <span class="mi">0</span> <span class="ow">or</span> <span class="n">i</span> <span class="o">==</span><span class="mi">0</span><span class="p">:</span> 
+  <span class="k">if</span> <span class="n">i</span> <span class="o">%</span> <span class="mi">5000</span> <span class="o">==</span> <span class="mi">0</span> <span class="ow">or</span> <span class="n">i</span> <span class="o">==</span><span class="mi">0</span><span class="p">:</span> 
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;loss: &quot;</span><span class="p">,</span> <span class="n">log_likelihood</span><span class="p">(</span><span class="n">y_hat</span><span class="p">,</span> <span class="n">y</span><span class="p">))</span>
   <span class="n">deltas</span> <span class="o">=</span> <span class="n">gradients</span><span class="p">(</span><span class="n">X_with_intercept</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">y_hat</span><span class="p">)</span>
   <span class="n">B</span> <span class="o">-=</span> <span class="mf">0.3</span> <span class="o">*</span> <span class="n">deltas</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
@@ -506,26 +516,16 @@ Sklearn score:  0.5710213053584055
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>loss:  -11871.790341111762
-loss:  -8989.260203661237
-loss:  -8361.557282645226
-loss:  -8089.454906650863
-loss:  -7948.545641070333
-loss:  -7867.047626101753
-loss:  -7815.839761158184
-loss:  -7781.320051928547
-loss:  -7756.513094073385
-loss:  -7737.597861359006
-loss:  -7722.377200111432
-loss:  -7709.540423021114
-loss:  -7698.283076636503
-loss:  -7688.100187248782
-loss:  -7678.668978644468
-loss:  -7669.7800335294505
-loss:  -7661.295751092525
-loss:  -7653.124700733372
-loss:  -7645.205490789696
-loss:  -7637.496464802648
+<pre>loss:  0.6821755251690551
+loss:  0.46252854158211454
+loss:  0.4541283502467595
+loss:  0.4510517001241438
+loss:  0.4487185438489886
+loss:  0.4466409644195144
+loss:  0.44474208933519344
+loss:  0.4429996946665173
+loss:  0.4413999204051543
+loss:  0.43993073757337586
 </pre>
 </div>
 </div>
@@ -549,6 +549,7 @@ loss:  -7637.496464802648
         <span class="n">recall_score</span><span class="p">(</span><span class="n">y</span><span class="p">,</span> <span class="p">(</span><span class="n">sigmoid</span><span class="p">(</span><span class="n">X_with_intercept</span> <span class="o">@</span> <span class="n">B</span><span class="p">)</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mf">0.5</span><span class="p">)</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">int</span><span class="p">)</span> <span class="p">),</span>
       <span class="p">)</span>
 <span class="nb">print</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Sklearn log loss: &quot;</span><span class="p">,</span> <span class="n">log_loss</span><span class="p">(</span><span class="n">y</span><span class="p">,</span> <span class="p">(</span><span class="n">sigmoid</span><span class="p">(</span><span class="n">X_with_intercept</span> <span class="o">@</span> <span class="n">B</span><span class="p">)</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">))))</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Sklearn weights: &quot;</span><span class="p">,</span> <span class="n">lr</span><span class="o">.</span><span class="n">intercept_</span><span class="o">.</span><span class="n">tolist</span><span class="p">()</span> <span class="o">+</span> <span class="n">lr</span><span class="o">.</span><span class="n">coef_</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span><span class="o">.</span><span class="n">tolist</span><span class="p">())</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Sklearn score&quot;</span><span class="p">,</span> 
       <span class="n">precision_score</span><span class="p">(</span><span class="n">y</span><span class="p">,</span> <span class="n">lr</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X</span><span class="p">)),</span>
@@ -566,10 +567,11 @@ loss:  -7637.496464802648
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Manual weights:  [-4.56293299  2.1266067  -3.80393265  3.61846479 -0.96766961  4.42720515
- 17.74366463]
-Manual score:  0.8152946468735942 0.8444692945671419
+<pre>Manual weights:  [ -4.74650191   2.09565859 -11.5802056    7.08212211  -3.00163538
+   8.00035044  18.85028779]
+Manual score:  0.8215249055925193 0.8514583915758084
 
+Sklearn log loss:  0.43866521703018374
 Sklearn weights:  [-4.385273936252051, 1.9603353158729624, -10.78106293024599, 6.882196980429938, -2.868679885031378, 7.251350300146187, 17.41000987846787]
 Sklearn score 0.8186773905272565 0.8536949026185817
 </pre>

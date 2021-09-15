@@ -4,17 +4,19 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="twitter:card" content="summary_large_image" /><!-- Begin Jekyll SEO tag v2.6.1 -->
-<title>Ai from scratch | R Cambier</title>
+<title>Gradient boosting | R Cambier</title>
 <meta name="generator" content="Jekyll v4.1.1" />
-<meta property="og:title" content="Ai from scratch" />
+<meta property="og:title" content="Gradient boosting" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="R Cambier’s blog. About riddles and computer science." />
-<meta property="og:description" content="R Cambier’s blog. About riddles and computer science." />
-<link rel="canonical" href="https://rcambier.github.io/blog/ai-from-scratch/" />
-<meta property="og:url" content="https://rcambier.github.io/blog/ai-from-scratch/" />
+<meta name="description" content="Gradient boosting algorithm from scratch" />
+<meta property="og:description" content="Gradient boosting algorithm from scratch" />
+<link rel="canonical" href="https://rcambier.github.io/blog/ai/2021/09/19/gradient-boosting.html" />
+<meta property="og:url" content="https://rcambier.github.io/blog/ai/2021/09/19/gradient-boosting.html" />
 <meta property="og:site_name" content="R Cambier" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2021-09-19T00:00:00-05:00" />
 <script type="application/ld+json">
-{"url":"https://rcambier.github.io/blog/ai-from-scratch/","@type":"WebPage","headline":"Ai from scratch","description":"R Cambier’s blog. About riddles and computer science.","@context":"https://schema.org"}</script>
+{"url":"https://rcambier.github.io/blog/ai/2021/09/19/gradient-boosting.html","@type":"BlogPosting","headline":"Gradient boosting","dateModified":"2021-09-19T00:00:00-05:00","datePublished":"2021-09-19T00:00:00-05:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://rcambier.github.io/blog/ai/2021/09/19/gradient-boosting.html"},"description":"Gradient boosting algorithm from scratch","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/blog/assets/css/style.css"><link rel="shortcut icon" type="image/x-icon" href="/blog/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
@@ -66,46 +68,65 @@ window.onload = wrap_img;
 </header>
 <main class="page-content" aria-label="Content">
       <div class="wrapper">
-        <div class='listing col6 pad4h margin3'>
-<h1>AI from scratch</h1>
-<p>When I learn about a new ML algorithm, the best way for me to understand it is to look at a very basic version written from scratch in Python. </p>
-<p>This is a compilation of notebooks with very simple implementations of some ML algorithms. I try to only use numpy and scipy.</p>
-<p>The goal is not to explain or teach. It's to capture the essence in a few simple lines of Python. If you find mistakes please mention it!</p>
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Gradient boosting</h1><p class="page-description">Gradient boosting algorithm from scratch</p>
+
+    
+      
+        <div class="pb-5 d-flex flex-wrap flex-justify-end">
+          <div class="px-2">
+
+    <a href="https://github.com/RCambier/blog/tree/master/_notebooks/2021-09-19-gradient-boosting.ipynb" role="button" target="_blank">
+<img class="notebook-badge-image" src="/blog/assets/badges/github.svg" alt="View On GitHub">
+    </a>
 </div>
 
-<div class='listing col6 pad4h margin3'>
-    
-    
-    <a class='item' href='/blog/ai/2021/09/19/gradient-boosting.html'>Gradient boosting</a> 
-    <div> Gradient boosting algorithm from scratch </div>
-    <br>
-    
-    <a class='item' href='/blog/ai/2021/09/18/boosting-trees.html'>Boosting trees</a> 
-    <div> Simple boosting trees in python from scratch </div>
-    <br>
-    
-    <a class='item' href='/blog/ai/2021/09/17/bayesian-inference.html'>Bayesian inference</a> 
-    <div> Bayesian inference in python from scratch </div>
-    <br>
-    
-    <a class='item' href='/blog/ai/2021/09/16/SVD.html'>SVD</a> 
-    <div> Singular value decomposition from scratch </div>
-    <br>
-    
-    <a class='item' href='/blog/ai/2021/09/15/pca.html'>PCA</a> 
-    <div> PCA dimensionality reduction from scratch </div>
-    <br>
-    
-    <a class='item' href='/blog/ai/2021/09/14/linear-regression.html'>Linear regression & Logistic regression</a> 
-    <div> Linear regression, ridge regression, logistic regression with r2 score from scratch in Python </div>
-    <br>
-    
-    <a class='item' href='/blog/ai/2021/09/13/hypothesis-testing.html'>Hypothesis testing</a> 
-    <div> Hypothesis testing, confidence interval </div>
-    <br>
-    
+          <div class="px-2">
+    <a href="https://mybinder.org/v2/gh/RCambier/blog/master?filepath=_notebooks%2F2021-09-19-gradient-boosting.ipynb" target="_blank">
+        <img class="notebook-badge-image" src="/blog/assets/badges/binder.svg" alt="Open In Binder"/>
+    </a>
 </div>
-    
+
+          <div class="px-2">
+    <a href="https://colab.research.google.com/github/RCambier/blog/blob/master/_notebooks/2021-09-19-gradient-boosting.ipynb" target="_blank">
+        <img class="notebook-badge-image" src="/blog/assets/badges/colab.svg" alt="Open In Colab"/>
+    </a>
+</div>
+        </div>
+      </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <!--
+#################################################
+### THIS FILE WAS AUTOGENERATED! DO NOT EDIT! ###
+#################################################
+# file to edit: _notebooks/2021-09-19-gradient-boosting.ipynb
+-->
+
+<div class="container" id="notebook-container">
+        
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Gradient-boosting">Gradient boosting<a class="anchor-link" href="#Gradient-boosting"> </a></h1>
+</div>
+</div>
+</div>
+</div>
+
+
+
+  </div><!-- from https://github.com/utterance/utterances -->
+<script src="https://utteranc.es/client.js"
+        repo="RCambier/blog"
+        issue-term="title"
+        label="blogpost-comment"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script><a class="u-url" href="/blog/ai/2021/09/19/gradient-boosting.html" hidden></a>
+</article>
       </div>
     </main><footer class="site-footer h-card">
   <data class="u-url" href="/blog/"></data>
