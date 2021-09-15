@@ -188,8 +188,8 @@ window.onload = wrap_img;
   <span class="c1"># Get the new residuals. This is what we fit the next tree on</span>
   <span class="c1"># Residuals are the gradient of the loss with respect to the previous trees predictions. </span>
   <span class="c1"># In this case the loss is MSE: </span>
-  <span class="c1"># loss = (y_hat - y)**2</span>
-  <span class="c1"># loss_gradient_with_respect_to_y = - 2 * (y_hat - y)</span>
+  <span class="c1"># loss = (y_hat - y) ** 2</span>
+  <span class="c1"># loss_gradient_with_respect_to_y = - 2 * (y_hat - y) = 2 * (y - y_hat)</span>
   <span class="n">gradient_of_loss</span> <span class="o">=</span>  <span class="mi">2</span><span class="o">*</span> <span class="p">(</span><span class="n">y</span><span class="o">.</span><span class="n">values</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span> <span class="o">-</span> <span class="n">predictions</span><span class="p">)</span>
 
 <span class="n">predictions</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">y</span><span class="o">.</span><span class="n">mean</span><span class="p">())</span>
