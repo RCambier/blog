@@ -132,6 +132,7 @@ window.onload = wrap_img;
 <span class="kn">from</span> <span class="nn">sklearn.tree</span> <span class="kn">import</span> <span class="n">DecisionTreeClassifier</span><span class="p">,</span> <span class="n">DecisionTreeRegressor</span>
 <span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <span class="n">cross_val_score</span>
 <span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">f1_score</span><span class="p">,</span> <span class="n">mean_absolute_error</span>
+<span class="kn">from</span> <span class="nn">sklearn.ensemble._gb_losses</span> <span class="kn">import</span> <span class="n">BinomialDeviance</span>
 </pre></div>
 
     </div>
@@ -154,6 +155,7 @@ window.onload = wrap_img;
 <span class="n">y</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">raw</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
 
 <span class="n">initial_predictions</span> <span class="o">=</span> <span class="p">[</span><span class="n">y</span><span class="o">.</span><span class="n">mean</span><span class="p">()[</span><span class="mi">0</span><span class="p">]]</span> <span class="o">*</span> <span class="nb">len</span><span class="p">(</span><span class="n">y</span><span class="p">)</span>
+
 
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Error with mean: &quot;</span><span class="p">,</span> <span class="n">mean_absolute_error</span><span class="p">(</span><span class="n">y</span><span class="p">,</span> <span class="n">initial_predictions</span><span class="p">))</span>
 
@@ -193,8 +195,8 @@ window.onload = wrap_img;
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Error with mean:  6.647207423956008
-Error with boosting:  3.336962769062147
+<pre>Error with mean:  6.647207423956011
+Error with boosting:  3.3369627690621475
 </pre>
 </div>
 </div>
@@ -240,6 +242,24 @@ Error with boosting:  3.336962769062147
 
 <div class="inner_cell">
     <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">update_lead_values</span><span class="p">(</span><span class="n">tree</span><span class="p">):</span> 
+    
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">raw</span> <span class="o">=</span> <span class="n">load_breast_cancer</span><span class="p">(</span><span class="n">return_X_y</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 
 <span class="n">X</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">raw</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
@@ -266,6 +286,10 @@ Error with boosting:  3.336962769062147
   <span class="c1"># Train a tree on the latest residuals</span>
   <span class="n">tree</span> <span class="o">=</span> <span class="n">DecisionTreeRegressor</span><span class="p">(</span><span class="n">max_depth</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
   <span class="n">tree</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">gradient_of_loss</span><span class="p">)</span>
+
+  <span class="c1"># TODO: Here you need to update the values of the tree leaves</span>
+  <span class="c1"># to equal a specific value each. </span>
+
   <span class="n">trees</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">tree</span><span class="p">)</span>
 
   <span class="c1"># Compute the predictions of the trees</span>
@@ -293,6 +317,39 @@ Error with boosting:  3.336962769062147
 Score with boosting:  0.922279792746114
 </pre>
 </div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">trees</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">tree_</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>&lt;sklearn.tree._tree.Tree at 0x7faeec0f2180&gt;</pre>
+</div>
+
 </div>
 
 </div>
