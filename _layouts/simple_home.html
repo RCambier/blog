@@ -17,7 +17,7 @@ layout: default
 <h1>The last few posts</h1>
 
 <div class='listing col6 pad4h margin3'>
-  {% for item in  posts limit:5 %}
+  {% for item in  site.posts limit:5 %}
   <a class='item' href='{{site.baseurl}}{{item.url}}'>{{item.title}}</a> 
   <div> {{ item.description }} </div>
   <br>
