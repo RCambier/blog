@@ -1,0 +1,20 @@
+---
+layout: default
+permalink: /random/
+title: Random other things
+search_exclude: false
+---
+
+<div class='listing col6 pad4h margin3'>
+<h1>Things I want to talk about</h1>
+
+
+<div class='listing col6 pad4h margin3'>
+    {% assign posts = site.categories.random %}
+    {% for item in  posts %}
+    <a class='item' href='{{site.baseurl}}{{item.url}}'>{{item.title}}</a> 
+    <div> {{ item.description }} </div>
+    <br>
+    {% endfor %}
+</div>
+    
