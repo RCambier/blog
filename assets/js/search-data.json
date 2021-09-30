@@ -404,7 +404,7 @@
 
   
       ,"page3": {
-          "title": "Random other things",
+          "title": "Other",
           "content": "Things I want to talk about . Bayesian riddle The typical bayesian interview question, solved with PyMC3",
           "url": "https://rcambier.github.io/blog/random/",
           "relUrl": "/random/",
