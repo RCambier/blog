@@ -260,14 +260,13 @@ It took me a while to figure out how to best do that.</p>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="How-to-share-data-accross-the-process-workers">How to share data accross the process workers<a class="anchor-link" href="#How-to-share-data-accross-the-process-workers"> </a></h1>
+<h1 id="How-to-share-data-accross-workers">How to share data accross workers<a class="anchor-link" href="#How-to-share-data-accross-workers"> </a></h1>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>The main iterable will be shared to each worker, most likely by being pickled behind the scenes.</p>
-<p>When I want to pass more data to each worker, my first choice is to use the <code>repeat</code> function. It simply returns the same object again and again.</p>
+<p>When you use thread workers, the data will simply be accessible to every thread directly. You can share it as a variable or as a global object.</p>
 
 </div>
 </div>
@@ -279,15 +278,16 @@ It took me a while to figure out how to best do that.</p>
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-python"><pre><span></span><span class="kn">from</span> <span class="nn">itertools</span> <span class="kn">import</span> <span class="n">repeat</span>
+<div class=" highlight hl-python"><pre><span></span><span class="n">some_global_data</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_parquet</span><span class="p">(</span><span class="s2">&quot;huge_file.parquet&quot;</span><span class="p">)</span>
 
-<span class="k">def</span> <span class="nf">work_function</span><span class="p">(</span><span class="n">arg</span><span class="p">,</span> <span class="n">some_data</span><span class="p">):</span> 
-    <span class="c1"># use `some_data` here !</span>
-    <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="n">arg</span><span class="p">)</span>
-    <span class="k">return</span> <span class="n">arg</span>
+<span class="k">def</span> <span class="nf">work_function</span><span class="p">(</span><span class="n">arg</span><span class="p">):</span> 
+    <span class="c1"># `some_global_data` and `arg` are coming straight form the memory</span>
+    <span class="c1"># shared accross threads</span>
+    <span class="n">s</span> <span class="o">=</span> <span class="n">some_global_data</span><span class="p">[</span><span class="n">some_global_data</span><span class="o">.</span><span class="n">val</span> <span class="o">==</span> <span class="n">some_data</span><span class="p">]</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
+    <span class="k">return</span> <span class="n">s</span>
 
-<span class="k">with</span> <span class="n">ProcessPoolExecutor</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span> <span class="k">as</span> <span class="n">p</span><span class="p">:</span> 
-    <span class="n">results</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">tqdm</span><span class="p">(</span><span class="n">p</span><span class="o">.</span><span class="n">map</span><span class="p">(</span><span class="n">work_function</span><span class="p">,</span> <span class="n">iterable</span><span class="p">(),</span> <span class="n">repeat</span><span class="p">(</span><span class="n">some_data</span><span class="p">))))</span>
+<span class="k">with</span> <span class="n">ThreadPoolExecutor</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span> <span class="k">as</span> <span class="n">p</span><span class="p">:</span> 
+    <span class="n">results</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">tqdm</span><span class="p">(</span><span class="n">p</span><span class="o">.</span><span class="n">map</span><span class="p">(</span><span class="n">work_function</span><span class="p">,</span> <span class="n">iterable</span><span class="p">())))</span>
 </pre></div>
 
     </div>
@@ -299,11 +299,12 @@ It took me a while to figure out how to best do that.</p>
 
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>However, if that <code>some_data</code> object is big, this could quickly be an issue. For 2 reasons:</p>
+<p>However, when you use process workers, the data shared to workers as arguments is most often pickled and shared as a string. This could quickly be an issue. For 2 reasons:</p>
 <ul>
 <li>Pickling a big object and sending it to every worker can be very expensive</li>
 <li>This will copy the object many times, which could harm the available memory</li>
 </ul>
+<p>The global data is shared directly from the memory, but it is copied to each worker. Which is also harming the memory.</p>
 <p>So what can we do ? Not a lot, there are no great mechanics (that I am aware of) to share data accross process workers in Python. It's basically a work in progress: <a href="https://lukasz.langa.pl/5d044f91-49c1-4170-aed1-62b6763e6ad0/">https://lukasz.langa.pl/5d044f91-49c1-4170-aed1-62b6763e6ad0/</a></p>
 
 </div>
@@ -329,8 +330,8 @@ It took me a while to figure out how to best do that.</p>
 <div class=" highlight hl-python"><pre><span></span><span class="n">big_object</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_parquet</span><span class="p">(</span><span class="s2">&quot;big_file.parquet&quot;</span><span class="p">)</span>
 
 <span class="k">def</span> <span class="nf">work_function</span><span class="p">(</span><span class="n">arg</span><span class="p">):</span> 
-    <span class="c1"># big object is in the global scope, and will not be copied to the</span>
-    <span class="c1"># child process for a while</span>
+    <span class="c1"># big object is in the global scope, and might not be copied to the</span>
+    <span class="c1"># child process for a while. </span>
     <span class="n">s</span> <span class="o">=</span> <span class="n">big_object</span><span class="p">[</span><span class="n">big_object</span><span class="o">.</span><span class="n">val</span> <span class="o">==</span> <span class="n">arg</span><span class="p">]</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
     <span class="k">return</span> <span class="n">s</span>
 
