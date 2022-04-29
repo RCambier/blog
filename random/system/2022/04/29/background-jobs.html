@@ -125,7 +125,7 @@ window.onload = wrap_img;
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>There is a small trick I love to use when running long commands in my terminal.</p>
-<p>To run a job in the background, you can append <code>&amp;</code> to the end of it. But what if you just started running a command, and you now realize you wanted to queue another command after it? Since you forgot to add <code>&amp;</code>, it's now running in the foreground in your terminal and it's not easy to queue another job after it. Well, here is how to do it:</p>
+<p>To run a job in the background, you can append <code>&amp;</code> to the end of it. But if you just started running a command, and you now realize you wanted to queue another command after it, but since you forgot to add <code>&amp;</code>, it's now running in the foreground in your terminal, here is a nice flow you can use:</p>
 <ol>
 <li><p>You run your first command without adding the <code>&amp;</code> at the end, for example</p>
 <div class="highlight"><pre><span></span><span class="k">for</span> i in <span class="o">{</span><span class="m">1</span>..5<span class="o">}</span><span class="p">;</span> <span class="k">do</span> sleep <span class="m">1</span><span class="p">;</span> <span class="k">done</span>
