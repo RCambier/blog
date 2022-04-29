@@ -4,9 +4,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="twitter:card" content="summary_large_image" /><!-- Begin Jekyll SEO tag v2.6.1 -->
-<title>Easy way to queue a job in bash | R Cambier</title>
+<title>Easy way to queue a job in the terminal | R Cambier</title>
 <meta name="generator" content="Jekyll v4.1.1" />
-<meta property="og:title" content="Easy way to queue a job in bash" />
+<meta property="og:title" content="Easy way to queue a job in the terminal" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="How to use background jobs to quickly queue a job after a running command" />
 <meta property="og:description" content="How to use background jobs to quickly queue a job after a running command" />
@@ -16,7 +16,7 @@
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2022-04-29T00:00:00-05:00" />
 <script type="application/ld+json">
-{"url":"https://rcambier.github.io/blog/random/system/2022/04/29/background-jobs.html","@type":"BlogPosting","headline":"Easy way to queue a job in bash","dateModified":"2022-04-29T00:00:00-05:00","datePublished":"2022-04-29T00:00:00-05:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://rcambier.github.io/blog/random/system/2022/04/29/background-jobs.html"},"description":"How to use background jobs to quickly queue a job after a running command","@context":"https://schema.org"}</script>
+{"url":"https://rcambier.github.io/blog/random/system/2022/04/29/background-jobs.html","@type":"BlogPosting","headline":"Easy way to queue a job in the terminal","dateModified":"2022-04-29T00:00:00-05:00","datePublished":"2022-04-29T00:00:00-05:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://rcambier.github.io/blog/random/system/2022/04/29/background-jobs.html"},"description":"How to use background jobs to quickly queue a job after a running command","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/blog/assets/css/style.css"><!-- the google_analytics_id gets auto inserted from the config file -->
 
@@ -86,7 +86,7 @@ window.onload = wrap_img;
         <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
-    <h1 class="post-title p-name" itemprop="name headline">Easy way to queue a job in bash</h1><p class="page-description">How to use background jobs to quickly queue a job after a running command</p>
+    <h1 class="post-title p-name" itemprop="name headline">Easy way to queue a job in the terminal</h1><p class="page-description">How to use background jobs to quickly queue a job after a running command</p>
 
     
       
@@ -125,7 +125,7 @@ window.onload = wrap_img;
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>There is a small trick I love to use when running long commands in my terminal.</p>
-<p>To run a job in the background, you can append <code>&amp;</code> to the end of it. But if you just started running a command, and you now realize you wanted to queue another command after it, but since you forgot to add <code>&amp;</code>, it's now running in the foreground in your terminal, here is a nice flow you can use:</p>
+<p>To run a job in the background, you can append <code>&amp;</code> to the end of it. But what if you just started running a command, and you now realize you wanted to queue another command after it? Since you forgot to add <code>&amp;</code>, it's now running in the foreground in your terminal and it's not easy to queue another job after it. Well, here is how to do it:</p>
 <ol>
 <li><p>You run your first command without adding the <code>&amp;</code> at the end, for example</p>
 <div class="highlight"><pre><span></span><span class="k">for</span> i in <span class="o">{</span><span class="m">1</span>..5<span class="o">}</span><span class="p">;</span> <span class="k">do</span> sleep <span class="m">1</span><span class="p">;</span> <span class="k">done</span>
