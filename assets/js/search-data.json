@@ -4,8 +4,8 @@
         "post0": {
             "title": "Easy way to queue a job in bash",
             "content": "There is a small trick I love to use when running long commands in my terminal. . To run a job in the background, you can append &amp; to the end of it. But if you just started running a command, and you now realize you wanted to queue another command after it, but since you forgot to add &amp;, it&#39;s now running in the foreground in your terminal, here is a nice flow you can use: . You run your first command without adding the &amp; at the end, for example . for i in {1..5}; do sleep 1; done . | You use CTRL + Z to pause that job and put it in the background . | You use fg &amp;&amp; [new command] in order to put that job back to the foreground and queue another job to it. . | Using the jobs feature . This is using the foreground/background job feature of the terminal. Here is a more detailed tutorial. . To summarize the few command I use: . CTRL + Z to put a job in the background | jobs to have a look at all the jobs | fg to put the last bakgrounded process back to the foreground | fg %2 to put another job back to the foreground | kill %2 to kill job number 2 | .",
-            "url": "https://rcambier.github.io/blog/random/2022/04/29/background-jobs.html",
-            "relUrl": "/random/2022/04/29/background-jobs.html",
+            "url": "https://rcambier.github.io/blog/random/system/2022/04/29/background-jobs.html",
+            "relUrl": "/random/system/2022/04/29/background-jobs.html",
             "date": " • Apr 29, 2022"
         }
         
