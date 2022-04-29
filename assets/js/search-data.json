@@ -438,7 +438,7 @@
   
       ,"page3": {
           "title": "Programming",
-          "content": "Things I want to talk about . Easy way to queue a job in the terminal How to use background jobs to quickly queue a job after a running command Python multiprocessing with loading bar Create a nice multiprocessing logic with a loading bar Cython for fast python Trying out cython Bayesian riddle The typical bayesian interview question, solved with PyMC3",
+          "content": "Some programming topics . Easy way to queue a job in the terminal How to use background jobs to quickly queue a job after a running command Python multiprocessing with loading bar Create a nice multiprocessing logic with a loading bar Cython for fast python Trying out cython Bayesian riddle The typical bayesian interview question, solved with PyMC3",
           "url": "https://rcambier.github.io/blog/programming/",
           "relUrl": "/programming/",
           "date": ""
