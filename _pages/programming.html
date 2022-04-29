@@ -1,7 +1,7 @@
 ---
 layout: default
-permalink: /random/
-title: Other
+permalink: /programming/
+title: Programming
 search_exclude: false
 ---
 
@@ -10,7 +10,7 @@ search_exclude: false
 
 
 <div class='listing col6 pad4h margin3'>
-    {% assign posts = site.categories.random %}
+    {% assign posts = site.categories.programming %}
     {% for item in  posts %}
     <a class='item' href='{{site.baseurl}}{{item.url}}'>{{item.title}}</a> 
     <div> {{ item.description }} </div>
