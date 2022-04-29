@@ -439,4 +439,30 @@ pre code { font-size: 15px !important; }
 
 .answer-wrapper:active .answer { visibility: visible; }
 
+.post-content p, .post-content li { font-size: 16px; color: #515151; }
+
+.post-title, .post-content h1 { font-size: 2rem; letter-spacing: -1px; line-height: 1.15; }
+
+@media screen and (min-width: 1200px) { .post-title, .post-content h1 { font-size: 2rem; } }
+
+.post-content { margin-bottom: 30px; }
+
+.post-content h1, .post-content h2, .post-content h3 { margin-top: 60px; }
+
+.post-content h4, .post-content h5, .post-content h6 { margin-top: 30px; }
+
+.post-content h2 { font-size: 1.3rem; }
+
+@media screen and (min-width: 1200px) { .post-content h2 { font-size: 1.5rem; } }
+
+.post-content h3 { font-size: 1rem; }
+
+@media screen and (min-width: 1200px) { .post-content h3 { font-size: 1.2rem; } }
+
+.post-content h4 { font-size: 0.9rem; }
+
+.post-content h5 { font-size: 0.85rem; }
+
+.post-content h6 { font-size: 0.75rem; }
+
 /*# sourceMappingURL=style.css.map */
