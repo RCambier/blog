@@ -16,7 +16,6 @@ search_exclude: false
     {% assign posts = site.categories.ai %}
     {% for item in  posts %}
     <a class='item' href='{{site.baseurl}}{{item.url}}'>{{item.title}}</a> 
-    <div class="category-tags"> {{ item.categories | sort | join: ", " }} </div>
     <div> {{ item.description }} </div>
     <br>
     {% endfor %}
