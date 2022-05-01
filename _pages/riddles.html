@@ -15,8 +15,8 @@ search_exclude: false
 </div>
 
 <div class='listing col6 pad4h margin3'>
-    {% assign posts = site.categories.riddle | sort:'difficulty' %}
-    {% for item in  posts %}
+    {% for item in site.posts | sort:'difficulty' %}
+    {% if post.tags contains 'riddle' %}
     <a class='item' href='{{site.baseurl}}{{item.url}}'>{{item.title}} (difficulty {{item.difficulty}})</a> 
     <div> {{ item.excerpt | strip_html | truncate: 50 }} </div>
     <br>
