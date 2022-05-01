@@ -147,13 +147,24 @@ window.onload = wrap_img;
 <p>You can solve the problem by applying the rule of bayes.</p>
 <p>We are looking for <code>the probability that it rains, given that we had 3 yes</code>.</p>
 <p>Through the bayes formula, this can be reformulated as <code>[the probability that we have 3 yes, given that it rains] * [the probability that it rains]  /  [the probability of having 3 yes]</code></p>
-<h2 id="Using-the-bayes-formula">Using the bayes formula<a class="anchor-link" href="#Using-the-bayes-formula"> </a></h2><p>p(rain | 3xYes) = (p(3xYes | rain ) * p(rain)) / P(3xYes)</p>
-<p>p(rain | 3xYes) = (((2/3)^3 ) * p(rain)) / P(3xYes)</p>
-<p>p(rain | 3xYes) = ((8/27) * p(rain)) / P(3xYes)</p>
-<p>p(rain | 3xYes) = ((8/27) * p(rain)) / (P(3xYes | rain) p(rain) + P(3xYes | not_rain) p (not_rain))</p>
-<p>p(rain | 3xYes) = ((8/27) * p(rain)) / (8/27) p(rain) + (1/27) p (not_rain))</p>
-<p>p(rain | 3xYes) = ((8) * p(rain)) / (8 p(rain) + ( 1- p (rain) ))</p>
-<p>p(rain | 3xYes) = ((8) * p(rain)) / (7 p(rain) + ( 1 ))</p>
+<h2 id="Using-the-bayes-formula">Using the bayes formula<a class="anchor-link" href="#Using-the-bayes-formula"> </a></h2>
+<pre><code>We want to get p(rain | 3xYes)
+
+p(rain | 3xYes) = (p(3xYes | rain ) * p(rain)) / P(3xYes)        # Bayes formula
+
+p(rain | 3xYes) = (((2/3)^3 ) * p(rain)) / P(3xYes)              # If it rains, there is (2/3)^3 chances of having 3xYes        
+
+p(rain | 3xYes) = ((8/27) * p(rain)) / P(3xYes)
+
+p(rain | 3xYes) = ((8/27) * p(rain)) / (P(3xYes | rain) p(rain) + P(3xYes | not_rain) p (not_rain))      # The chances of having 3xYes are the chances 
+                                                                                                         # of having it when it rains, added to chances 
+                                                                                                         # of having it when it does not rain
+
+p(rain | 3xYes) = ((8/27) * p(rain)) / (8/27) p(rain) + (1/27) p (not_rain))
+
+p(rain | 3xYes) = ((8) * p(rain)) / (8 p(rain) + ( 1- p (rain) ))
+
+p(rain | 3xYes) = ((8) * p(rain)) / (7 p(rain) + ( 1 ))</code></pre>
 <h2 id="Choosing-a-prior">Choosing a prior<a class="anchor-link" href="#Choosing-a-prior"> </a></h2><p>Now that you did that, you are left with a formula that depends on the probability that it rains. You can choose a prior for what you consider your a-priori belief on the chances of raining, and plug it in.</p>
 <p>For example, if you chose the prior p(rain) = 0.5, it gives.</p>
 <p>p(rain | 3xYes) = 0.8888</p>
