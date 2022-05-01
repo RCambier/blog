@@ -13,6 +13,7 @@ search_exclude: false
     {% assign posts = site.categories.programming %}
     {% for item in  posts %}
     <a class='item' href='{{site.baseurl}}{{item.url}}'>{{item.title}}</a> 
+    <div class="category-tags category-tags-link"> {{ item.categories | sort | join: ", " }} </div>
     <div> {{ item.description }} </div>
     <br>
     {% endfor %}
