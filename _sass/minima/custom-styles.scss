@@ -69,3 +69,10 @@
     @include relative-font-size(0.75);
   }
 }
+
+.category-tags {
+  margin-top: .25rem !important;
+  margin-bottom: .25rem !important;
+  color: #a5aeb7;
+  font-size: 13px;
+}
