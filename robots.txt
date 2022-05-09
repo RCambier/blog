@@ -1,0 +1,4 @@
+Sitemap: https://rcambier.github.io/blog/sitemap.xml
+
+User-agent: *
+Disallow:
